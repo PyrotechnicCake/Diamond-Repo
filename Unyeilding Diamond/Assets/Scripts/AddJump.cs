@@ -17,9 +17,13 @@ public class AddJump : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+       
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
         {
-            other.GetComponent<PlayerMovement>().maxJumps++;
+            collision.GetComponent<PlayerMovement>().maxJumps++;
             Destroy(gameObject);
         }
     }

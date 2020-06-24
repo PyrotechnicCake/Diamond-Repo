@@ -4,23 +4,52 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private CharacterController controller;
+    public CharacterController2d  controller;
+    private Rigidbody2D rb;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
+    public float playerSpeed = 2.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
-    private int jumpCount = 0;
+
+    public int jumpCount = 0;
     public int maxJumps;
+    public bool jump = false;
+    public bool crouch = false;
+    float horizontalMove = 0f;
 
     private void Start()
     {
-        controller = gameObject.GetComponent<CharacterController>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        controller = GetComponent<CharacterController2d>();
+
     }
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
+        horizontalMove = Input.GetAxis("Horizontal") * playerSpeed;
+
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+        {
+            jump = true;
+            //jumpCount++;
+        }
+
+        if (Input.GetButtonDown("Crouch"))
+        {
+            crouch = true;
+        }else if (Input.GetButtonUp("Crouch"))
+        {
+            crouch = false;
+        }
+    }
+
+    void FixedUpdate()
+    {
+        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        jump = false;
+        
+        /*groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
@@ -43,6 +72,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        controller.Move(playerVelocity * Time.deltaTime);*/
     }
 }
