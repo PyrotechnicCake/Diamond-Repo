@@ -23,7 +23,7 @@ public class AddJump : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<PlayerMovement>().maxJumps++;
+            collision.GetComponent<PlayerController>().extrajumpsMax++;
             Destroy(gameObject);
         }
     }
