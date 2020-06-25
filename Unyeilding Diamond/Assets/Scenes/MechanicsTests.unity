@@ -247,7 +247,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -354,13 +354,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 8
+  jumpForce: 10
   groundCheck: {fileID: 975897795}
   checkRadius: 0.5
   whatisGround:
     serializedVersion: 2
     m_Bits: 256
   extrajumpsMax: 0
+  hasDash: 1
+  dashSpeed: 50
+  dashTime: 0.1
 --- !u!1 &711343561
 GameObject:
   m_ObjectHideFlags: 0

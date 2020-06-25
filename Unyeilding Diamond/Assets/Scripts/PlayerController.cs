@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatisGround;
     private int extraJumps;
     public int extrajumpsMax;
+
+    public bool hasDash = false;
+    public float dashSpeed;
+    public float dashTime;
     
     // Start is called before the first frame update
     void Start()
@@ -32,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
         moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        Debug.Log(rb.velocity);
 
         if(facingRight == false && moveInput > 0)
         {
@@ -57,6 +62,17 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
+        if(hasDash == true && Input.GetMouseButtonDown(0))
+        {
+            StartCoroutine("Dash");
+        }
+    }
+
+    IEnumerator Dash()
+    {
+        speed += dashSpeed;
+        yield return new WaitForSeconds(dashTime);
+        speed -= dashSpeed;
     }
 
     void Flip()
