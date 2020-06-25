@@ -21,11 +21,16 @@ public class PlayerController : MonoBehaviour
     public bool hasDash = false;
     public float dashSpeed;
     public float dashTime;
+
+    public bool hasGlide = false;
+    public float glidePower;
+    public float originalGravity;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        originalGravity = rb.gravityScale;
     }
 
     // Update is called once per frame
@@ -49,7 +54,8 @@ public class PlayerController : MonoBehaviour
 
      void Update()
     {
-        if(isGrounded == true)
+        //jump
+        if (isGrounded == true)
         {
             extraJumps = extrajumpsMax;
         }
@@ -61,10 +67,23 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
-
+        //dash
         if(hasDash == true && Input.GetMouseButtonDown(0))
         {
             StartCoroutine("Dash");
+        }
+        //glide
+        if(hasGlide == true && Input.GetMouseButtonDown(1) && rb.velocity.y <= 0)
+        {
+            rb.gravityScale /= glidePower;
+        }else if(hasGlide == true && Input.GetMouseButtonDown(1) && rb.velocity.y > 0)
+        {
+            rb.velocity = new Vector2(moveInput * speed, 0);
+            rb.gravityScale /= glidePower;
+        }
+        if (hasGlide == true && Input.GetMouseButtonUp(1))
+        {
+            rb.gravityScale = originalGravity;
         }
     }
 

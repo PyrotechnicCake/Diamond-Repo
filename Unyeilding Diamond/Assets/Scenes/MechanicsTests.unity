@@ -364,6 +364,9 @@ MonoBehaviour:
   hasDash: 1
   dashSpeed: 50
   dashTime: 0.1
+  hasGlide: 1
+  glidePower: 10
+  originalGravity: 0
 --- !u!1 &711343561
 GameObject:
   m_ObjectHideFlags: 0
