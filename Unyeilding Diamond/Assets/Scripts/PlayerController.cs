@@ -15,11 +15,13 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
-    public LayerMask whatisGround;
+    public LayerMask whatIsGround;
     private int extraJumps;
     public int extrajumpsMax;
     //dash checks
     public bool hasDash = false;
+    public bool dashReady = true;
+    public float dashRefreshTime;
     public float dashSpeed;
     public float dashTime;
     //glide checks
@@ -37,7 +39,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatisGround);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
 
         moveInput = Input.GetAxisRaw("Horizontal");
@@ -76,7 +78,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
         //dash
-        if(hasDash && Input.GetMouseButtonDown(0))
+        if(hasDash && dashReady && Input.GetMouseButtonDown(0))
         {
             StartCoroutine("Dash");
         }
@@ -105,6 +107,9 @@ public class PlayerController : MonoBehaviour
         speed += dashSpeed;
         yield return new WaitForSeconds(dashTime);
         speed -= dashSpeed;
+        dashReady = false;
+        yield return new WaitForSeconds(dashRefreshTime);
+        dashReady = true;
     }
 
     void Flip()
