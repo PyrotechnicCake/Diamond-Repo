@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
     public bool hasGlide = false;
     public float glidePower;
     public float originalGravity;
+    //fly checks
+    public bool isGliding = false;
+    public bool hasFly = false;
+    public float flySpeed;
+    private float vertMoveInput;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +48,7 @@ public class PlayerController : MonoBehaviour
 
 
         moveInput = Input.GetAxisRaw("Horizontal");
+        vertMoveInput = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         if(facingRight == false && moveInput > 0)
@@ -87,17 +93,24 @@ public class PlayerController : MonoBehaviour
         {
             //reduce gravity when falling
             rb.gravityScale /= glidePower;
-        }else if(hasGlide && Input.GetMouseButtonDown(1) && rb.velocity.y > 0)
+            isGliding = true;
+        }
+        else if(hasGlide && Input.GetMouseButtonDown(1) && rb.velocity.y > 0)
         {
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity
             rb.gravityScale /= glidePower;
+            isGliding = true;
         }
         if (hasGlide && Input.GetMouseButtonUp(1))
         {
             //reset gravity
             rb.gravityScale = originalGravity;
+        }
+        if(isGliding && Input.GetAxisRaw("Vertical") > 0)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, vertMoveInput * flySpeed);
         }
 
     }
