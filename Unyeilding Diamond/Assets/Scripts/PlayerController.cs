@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool facingRight = true;
     //jump checks
+    public bool hasJump = false;
     private bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
             extraJumps--;
-        }else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
+        }else if (hasJump && Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
         {
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
