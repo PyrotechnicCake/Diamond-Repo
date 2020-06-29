@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             //reset gravity
             rb.gravityScale = originalGravity;
         }
-        if(isGliding && Input.GetAxisRaw("Vertical") > 0)
+        if(isGliding && hasFly && Input.GetAxisRaw("Vertical") > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, vertMoveInput * flySpeed);
         }
