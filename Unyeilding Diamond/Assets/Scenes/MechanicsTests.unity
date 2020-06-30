@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1063876477}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -692,7 +692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343150576}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: -10.967075, y: 3.6323848, z: -10.077834}
+  m_LocalPosition: {x: 28.46, y: 6.2364826, z: -9.848077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 277138502}
@@ -777,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711343561}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: -10.967075, y: 3.6323848, z: -10.077834}
+  m_LocalPosition: {x: 28.46, y: 6.2364826, z: -9.848077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -836,6 +836,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myType: 2
+--- !u!4 &1063876477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3223532695174580994, guid: e7aeff37c9f089a4fa23b73bd68d172b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3223532695798001476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1585778187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1686,11 +1692,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3223532695174580999, guid: e7aeff37c9f089a4fa23b73bd68d172b,
-        type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3223532695174581006, guid: e7aeff37c9f089a4fa23b73bd68d172b,
         type: 3}
       propertyPath: hasGlide
@@ -1730,6 +1731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: hasDash
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223532695174580999, guid: e7aeff37c9f089a4fa23b73bd68d172b,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7aeff37c9f089a4fa23b73bd68d172b, type: 3}
