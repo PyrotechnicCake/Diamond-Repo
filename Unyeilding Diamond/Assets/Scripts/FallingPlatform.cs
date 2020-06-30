@@ -7,6 +7,7 @@ public class FallingPlatform : MonoBehaviour
     public float crumbleTime;
     public Collider2D myCollider;
     private Rigidbody2D rb;
+    public Vector2 startPos;
     
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,7 @@ public class FallingPlatform : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().gravityScale;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        startPos = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -36,6 +38,13 @@ public class FallingPlatform : MonoBehaviour
             StartCoroutine("Collapse");
         }
     }*/
+    public void Return()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        transform.position = startPos;
+        myCollider.enabled = true;
+
+    }
 
 
 

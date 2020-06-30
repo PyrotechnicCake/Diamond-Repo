@@ -6,11 +6,17 @@ public class KillBox : MonoBehaviour
 {
     public Collider2D killBox;
     public GameObject respawn;
+    public GameObject[] fallingPlatforms;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        respawn = GameObject.FindGameObjectWithTag("Respawn");
+        if(fallingPlatforms.Length == 0)
+        {
+            fallingPlatforms = GameObject.FindGameObjectsWithTag("FallingPlatform");
+        }
     }
 
     // Update is called once per frame
@@ -25,6 +31,10 @@ public class KillBox : MonoBehaviour
             col.transform.position = respawn.transform.position;
             Debug.Log("Player is kill");
             //reduce lives?
+            foreach (GameObject fallingPlatform in fallingPlatforms)
+            {
+                fallingPlatform.GetComponent<FallingPlatform>().Return();
+            }
         }
     }
 }
