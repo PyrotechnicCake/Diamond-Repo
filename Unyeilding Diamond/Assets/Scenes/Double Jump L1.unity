@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crumbleTime: 1
-  myCollider: {fileID: 69466632}
+  myCollider: {fileID: 142410003}
   startPos: {x: 0, y: 0}
 --- !u!50 &142410008
 Rigidbody2D:
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crumbleTime: 1
-  myCollider: {fileID: 69466632}
+  myCollider: {fileID: 501880292}
   startPos: {x: 0, y: 0}
 --- !u!50 &501880297
 Rigidbody2D:
@@ -2051,7 +2051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crumbleTime: 1
-  myCollider: {fileID: 69466632}
+  myCollider: {fileID: 1219074263}
   startPos: {x: 0, y: 0}
 --- !u!50 &1219074268
 Rigidbody2D:
@@ -4013,7 +4013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crumbleTime: 1
-  myCollider: {fileID: 69466632}
+  myCollider: {fileID: 2144323838}
   startPos: {x: 0, y: 0}
 --- !u!50 &2144323843
 Rigidbody2D:
