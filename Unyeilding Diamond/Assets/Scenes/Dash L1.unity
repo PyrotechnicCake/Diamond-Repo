@@ -195,7 +195,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333836, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: timer
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333836, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -1343,7 +1343,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333836, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: timer
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333836, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
