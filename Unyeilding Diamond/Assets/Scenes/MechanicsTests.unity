@@ -692,7 +692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343150576}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 28.46, y: 6.2364826, z: -9.848077}
+  m_LocalPosition: {x: -2.67, y: 6.2364826, z: -9.848077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 277138502}
@@ -777,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711343561}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 28.46, y: 6.2364826, z: -9.848077}
+  m_LocalPosition: {x: -2.67, y: 6.2364826, z: -9.848077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1641,7 +1641,7 @@ PrefabInstance:
     - target: {fileID: 3223532695174580994, guid: e7aeff37c9f089a4fa23b73bd68d172b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.46
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 3223532695174580994, guid: e7aeff37c9f089a4fa23b73bd68d172b,
         type: 3}
@@ -1732,6 +1732,21 @@ PrefabInstance:
         type: 3}
       propertyPath: hasDash
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223532695174581006, guid: e7aeff37c9f089a4fa23b73bd68d172b,
+        type: 3}
+      propertyPath: sprintTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223532695174581006, guid: e7aeff37c9f089a4fa23b73bd68d172b,
+        type: 3}
+      propertyPath: sprintSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223532695174581006, guid: e7aeff37c9f089a4fa23b73bd68d172b,
+        type: 3}
+      propertyPath: walkSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3223532695174580999, guid: e7aeff37c9f089a4fa23b73bd68d172b,
         type: 3}

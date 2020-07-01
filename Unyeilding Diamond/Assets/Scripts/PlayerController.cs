@@ -7,7 +7,12 @@ public class PlayerController : MonoBehaviour
     //basic movement stuff
     public float speed;
     public float jumpForce;
-    private float moveInput;
+    public float moveInput;
+    public float sprintTimer;
+    public float time;
+    public float sprintSpeed;
+    public float walkSpeed;
+    private bool isSprinting = false;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
@@ -58,6 +63,17 @@ public class PlayerController : MonoBehaviour
         }else if (facingRight == true && moveInput < 0)
         {
             Flip();
+        }
+        if(moveInput != 0 && !isSprinting && isGrounded)
+        {
+            Sprint();
+        }
+        if (moveInput == 0)
+        {
+            speed = walkSpeed;
+            time = 0;
+            isSprinting = false;
+            Debug.Log("stop sprinting");
         }
     }
 
@@ -124,6 +140,17 @@ public class PlayerController : MonoBehaviour
         dashReady = false;
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
+    }
+    void Sprint()
+    {
+        time += Time.deltaTime;
+        if(time >= sprintTimer)
+        {
+            speed += sprintSpeed;
+            isSprinting = true;
+            Debug.Log("Sprinting!");
+        }
+        
     }
 
     void Flip()
