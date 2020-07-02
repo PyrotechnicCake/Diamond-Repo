@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //basic movement stuff
-    public float speed;
+    private float speed;
     public float jumpForce;
-    public float moveInput;
+    private float moveInput;
     public float sprintTimer;
     public float time;
-    public float sprintSpeed;
-    public float walkSpeed;
+    public float sprintSpeed = 2;
+    public float walkSpeed = 5;
     private bool isSprinting = false;
 
     private Rigidbody2D rb;
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool hasJump = false;
     private bool isGrounded;
     public Transform groundCheck;
-    public float checkRadius;
+    private float checkRadius;
     public LayerMask whatIsGround;
     private int extraJumps;
     public int extrajumpsMax;
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     //glide checks
     public bool hasGlide = false;
     public float glidePower;
-    public float originalGravity;
+    private float originalGravity;
     //fly checks
     public bool isGliding = false;
     public bool hasFly = false;
