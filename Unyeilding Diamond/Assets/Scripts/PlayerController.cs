@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool hasJump = false;
     private bool isGrounded;
     public Transform groundCheck;
-    private float checkRadius;
+    private float checkRadius = 0.5f;
     public LayerMask whatIsGround;
     private int extraJumps;
     public int extrajumpsMax;
