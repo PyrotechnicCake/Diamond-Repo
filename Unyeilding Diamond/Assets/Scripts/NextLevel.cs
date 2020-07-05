@@ -30,6 +30,13 @@ public class NextLevel : MonoBehaviour
             Dictionary<string, object> customParams = new Dictionary<string, object>();
             customParams.Add("secondsPlayed", elapsedTime);
             customParams.Add("deathCount", collision.GetComponent<PlayerController>().deathCount);
+
+            Analytics.CustomEvent("LevelFinished", new Dictionary<string, object>
+        {
+            {"SecondsToComplete", elapsedTime},
+            {"NumTimesPlayerDied", collision.GetComponent<PlayerController>().deathCount}
+        });
+
             Debug.Log("Change Level");
             SceneManager.LoadScene(nextLevel);
         }

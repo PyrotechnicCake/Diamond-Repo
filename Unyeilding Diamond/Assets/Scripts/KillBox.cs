@@ -31,20 +31,25 @@ public class KillBox : MonoBehaviour
 
     public void Respawn(GameObject player)
     {
-        //analytics
-        Dictionary<string, object> customParams = new Dictionary<string, object>();
-        customParams.Add("WhatKilledPlayer", gameObject.name);
-        Debug.Log(gameObject.name);
+        //add to death count
+        player.GetComponent<PlayerController>().deathCount++;
+        
         //reset player
         player.transform.position = respawn.transform.position;
         //reduce lives?
-        //add to death count
-        player.GetComponent<PlayerController>().deathCount++;
+        
         //reset platforms
-        Debug.Log("deathcount = " + player.GetComponent<PlayerController>().deathCount);
         foreach (GameObject fallingPlatform in fallingPlatforms)
         {
             fallingPlatform.GetComponent<FallingPlatform>().Return();
         }
+        //analytics
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("WhatKilledPlayer", gameObject.name);
+        Analytics.CustomEvent("ThePlayierDied", new Dictionary<string, object>
+        {
+            {"PlayedKilledBy", gameObject.name },
+            {"PlayerDeathCount", player.GetComponent<PlayerController>().deathCount}
+        });
     }
 }
