@@ -39,6 +39,9 @@ public class PlayerController : MonoBehaviour
     public bool hasFly = false;
     public float flySpeed;
     private float vertMoveInput;
+
+    //gameplay checks
+    public int deathCount = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -73,7 +76,7 @@ public class PlayerController : MonoBehaviour
             speed = walkSpeed;
             time = 0;
             isSprinting = false;
-            Debug.Log("stop sprinting");
+            //Debug.Log("stop sprinting");
         }
     }
 
@@ -148,7 +151,7 @@ public class PlayerController : MonoBehaviour
         {
             speed += sprintSpeed;
             isSprinting = true;
-            Debug.Log("Sprinting!");
+            //Debug.Log("Sprinting!");
         }
         
     }

@@ -25,7 +25,7 @@ public class MovingPlatform : MonoBehaviour
     {
         if (isActive)
         {
-            Debug.Log("moving");
+            //Debug.Log("moving");
             Move();
         }
 
@@ -34,13 +34,13 @@ public class MovingPlatform : MonoBehaviour
             distance = Vector2.Distance(transform.position, target);
             if(distance < .1)
             {
-                Debug.Log("destination reached");
+                //Debug.Log("destination reached");
                 reached = true;
             }
         }
         else if(reached)
         {
-            Debug.Log("changing destintion");
+            //Debug.Log("changing destintion");
             tempPos = target;
             target = pos;
             pos = tempPos;
@@ -52,7 +52,7 @@ public class MovingPlatform : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("activated");
+            //Debug.Log("activated");
             //start moving
             isActive = true;
         }

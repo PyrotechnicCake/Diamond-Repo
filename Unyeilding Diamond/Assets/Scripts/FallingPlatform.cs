@@ -56,7 +56,7 @@ public class FallingPlatform : MonoBehaviour
         myCollider.enabled = false;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         rb.velocity = Vector2.down * .001f;
-        Debug.Log("falling");
+        //Debug.Log("falling");
 
     }
 }
