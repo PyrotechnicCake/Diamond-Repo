@@ -111,6 +111,8 @@ public class PlayerController : MonoBehaviour
         //glide
         if (hasGlide && Input.GetMouseButtonDown(1) && rb.velocity.y <= 0 && !isGrounded)
         {
+            //stop all vertical movement
+            rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity when falling
             rb.gravityScale /= glidePower;
             isGliding = true;
