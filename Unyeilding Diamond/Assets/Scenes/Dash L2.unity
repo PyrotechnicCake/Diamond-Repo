@@ -846,6 +846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: moving platform
       objectReference: {fileID: 0}
+    - target: {fileID: 8890922345846538957, guid: 73a64d0e55f57e84a9a0b14a245a9162,
+        type: 3}
+      propertyPath: m_TagString
+      value: MovingPlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 8890922345846538953, guid: 73a64d0e55f57e84a9a0b14a245a9162,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3567,7 +3572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1808852564}
-  zoomOut: 0
   priorityNum: 2
 --- !u!4 &1293883649
 Transform:
@@ -3630,7 +3634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1808852564}
-  zoomOut: 0
   priorityNum: 0
 --- !u!4 &1343289690
 Transform:
@@ -3762,7 +3765,7 @@ GameObject:
   - component: {fileID: 1361779777}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Respawn
+  m_TagString: StartPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5904,7 +5907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1808852564}
-  zoomOut: 0
   priorityNum: 0
 --- !u!4 &2064673933
 Transform:
