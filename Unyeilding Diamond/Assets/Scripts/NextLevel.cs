@@ -25,6 +25,8 @@ public class NextLevel : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            //reset respawn number
+            collision.GetComponent<PlayerController>().checkpointNum = 0;
             //Analytics
             Analytics.CustomEvent("LevelFinished", new Dictionary<string, object>
         {

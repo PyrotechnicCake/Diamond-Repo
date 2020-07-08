@@ -7,6 +7,9 @@ TagManager:
   - Item
   - MovingPlatform
   - FallingPlatform
+  - StartPos
+  - Checkpoint1
+  - Checkpoint2
   layers:
   - Default
   - TransparentFX
