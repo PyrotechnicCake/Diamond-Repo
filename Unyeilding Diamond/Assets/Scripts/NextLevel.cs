@@ -25,15 +25,11 @@ public class NextLevel : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            //AnalyticsEvent.LevelComplete(thisLevel.name, thisLevel.buildIndex);
-
-            Dictionary<string, object> customParams = new Dictionary<string, object>();
-            customParams.Add("secondsPlayed", elapsedTime);
-            customParams.Add("deathCount", collision.GetComponent<PlayerController>().deathCount);
-
+            //Analytics
             Analytics.CustomEvent("LevelFinished", new Dictionary<string, object>
         {
-            {"SecondsToComplete", elapsedTime},
+            {"LevelName", thisLevel},
+            { "SecondsToComplete", elapsedTime},
             {"NumTimesPlayerDied", collision.GetComponent<PlayerController>().deathCount}
         });
 

@@ -44,8 +44,6 @@ public class KillBox : MonoBehaviour
             fallingPlatform.GetComponent<FallingPlatform>().Return();
         }
         //analytics
-        Dictionary<string, object> customParams = new Dictionary<string, object>();
-        customParams.Add("WhatKilledPlayer", gameObject.name);
         Analytics.CustomEvent("ThePlayierDied", new Dictionary<string, object>
         {
             {"PlayedKilledBy", gameObject.name },
