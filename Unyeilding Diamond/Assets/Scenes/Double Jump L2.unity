@@ -840,7 +840,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 324964430}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!1 &337518912
 GameObject:
@@ -854,6 +856,7 @@ GameObject:
   - component: {fileID: 337518915}
   - component: {fileID: 337518914}
   - component: {fileID: 337518913}
+  - component: {fileID: 337518917}
   m_Layer: 8
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -941,12 +944,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337518912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4074, y: -4.61, z: 0}
+  m_LocalPosition: {x: -6.4074, y: -5.02, z: 0}
   m_LocalScale: {x: 0.82500595, y: 0.3139761, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1572256035}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &337518917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337518912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425c404b604efa849be0bfc428ba10fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  destination: {fileID: 1572256034}
+  target: {x: 0, y: 0}
+  isActive: 0
 --- !u!1 &359474807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1535,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4239,7 +4259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 1155265072}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!1 &1169521603
 GameObject:
@@ -5099,6 +5121,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1572256034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572256035}
+  m_Layer: 8
+  m_Name: Desitnation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572256035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572256034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 337518916}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581707271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,6 +5583,7 @@ GameObject:
   - component: {fileID: 1818324584}
   - component: {fileID: 1818324583}
   - component: {fileID: 1818324582}
+  - component: {fileID: 1818324586}
   m_Layer: 8
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -5620,10 +5673,27 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.5398, y: -2.07, z: 0}
   m_LocalScale: {x: 0.8994745, y: 0.3139761, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2082436195}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1818324586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818324581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425c404b604efa849be0bfc428ba10fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  destination: {fileID: 2082436194}
+  target: {x: 0, y: 0}
+  isActive: 0
 --- !u!1 &1837362535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6248,7 +6318,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 2017799446}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!1 &2043690693
 GameObject:
@@ -6278,5 +6350,35 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1366943071}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082436194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082436195}
+  m_Layer: 8
+  m_Name: Desitnation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082436195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082436194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 5.51, z: 0}
+  m_LocalScale: {x: 0.9172133, y: 1.0000124, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1818324585}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
