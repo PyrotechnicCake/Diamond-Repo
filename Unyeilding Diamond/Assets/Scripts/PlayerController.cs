@@ -105,12 +105,12 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
         //dash
-        if(hasDash && dashReady && Input.GetMouseButtonDown(0))
+        if(hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
             StartCoroutine("Dash");
         }
         //glide
-        if (hasGlide && Input.GetMouseButtonDown(1) && rb.velocity.y <= 0 && !isGrounded)
+        if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale /= glidePower;
             isGliding = true;
         }
-        else if(hasGlide && Input.GetMouseButtonDown(1) && rb.velocity.y > 0)
+        else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale /= glidePower;
             isGliding = true;
         }
-        if (hasGlide && Input.GetMouseButtonUp(1))
+        if (hasGlide && Input.GetButtonUp("Glide"))
         {
             //reset gravity
             rb.gravityScale = originalGravity;
