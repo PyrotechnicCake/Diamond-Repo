@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Dash L1.unity
     guid: 87360ec22707a5e48b947501186e3387
   - enabled: 1
+    path: Assets/Scenes/Dash L2.unity
+    guid: 848a2aaf7bd8f0e4692c7a58f2d1adff
+  - enabled: 1
     path: Assets/Scenes/Double Jump L1.unity
     guid: 084ea812c92e5e244ae6f6890015fd98
   - enabled: 1
