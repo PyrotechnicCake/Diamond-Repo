@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class Respawn : MonoBehaviour
 {
     public int myCheckPointNum;
+    public CinemachineVirtualCamera cam;
+    public int resetCamPriorityTo;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class Respawn : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             collision.GetComponent<PlayerController>().checkpointNum = myCheckPointNum;
+            cam.Priority = resetCamPriorityTo;
         }
     }
 }
