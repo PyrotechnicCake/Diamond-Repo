@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 847842560901333836}
   m_Layer: 8
   m_Name: timed smasher
-  m_TagString: MovingPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -275,4 +275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 847842561616685154}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
+  fallingPlatforms: []
+  movingPlatforms: []

@@ -9,6 +9,7 @@ public class MovingPlatform : MonoBehaviour
     public Vector2 target;
     private Vector2 pos;
     private Vector2 tempPos;
+    private Vector2 startPos;
     private float distance;
     public bool isActive = false;
     private bool reached = false;
@@ -18,6 +19,7 @@ public class MovingPlatform : MonoBehaviour
     {
         target = destination.transform.position;
         pos = gameObject.transform.position;
+        startPos = gameObject.transform.position;
     }
 
     // Update is called once per frame
@@ -60,5 +62,10 @@ public class MovingPlatform : MonoBehaviour
     void Move()
     {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+    }
+    public void Return()
+    {
+        isActive = false;
+        transform.position = startPos;
     }
 }

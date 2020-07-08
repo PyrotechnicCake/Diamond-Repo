@@ -12,6 +12,7 @@ public class KillBox : MonoBehaviour
     private int checkRespawn;
 
     public GameObject[] fallingPlatforms;
+    public GameObject[] movingPlatforms;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,10 @@ public class KillBox : MonoBehaviour
         if (fallingPlatforms.Length == 0)
         {
             fallingPlatforms = GameObject.FindGameObjectsWithTag("FallingPlatform");
+        }
+        if(movingPlatforms.Length == 0)
+        {
+            movingPlatforms = GameObject.FindGameObjectsWithTag("MovingPlatform");
         }
 
     }
@@ -63,6 +68,10 @@ public class KillBox : MonoBehaviour
         foreach (GameObject fallingPlatform in fallingPlatforms)
         {
             fallingPlatform.GetComponent<FallingPlatform>().Return();
+        }
+        foreach (GameObject movingPlatform in movingPlatforms)
+        {
+            movingPlatform.GetComponent<MovingPlatform>().Return();
         }
         //analytics
         Analytics.CustomEvent("ThePlayierDied", new Dictionary<string, object>

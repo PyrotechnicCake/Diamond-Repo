@@ -347,7 +347,7 @@ MonoBehaviour:
   speed: 6
   destination: {fileID: 2089505252}
   target: {x: 0, y: 0}
-  isActive: 1
+  isActive: 0
 --- !u!1 &70074052
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCheckPointNum: 1
+  cam: {fileID: 0}
+  resetCamPriorityTo: 0
 --- !u!4 &285575780
 Transform:
   m_ObjectHideFlags: 0
@@ -1143,6 +1145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCheckPointNum: 2
+  cam: {fileID: 0}
+  resetCamPriorityTo: 0
 --- !u!4 &1450786436
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,6 +1362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCheckPointNum: 0
+  cam: {fileID: 0}
+  resetCamPriorityTo: 0
 --- !u!58 &1651895786
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1842,6 +1848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: timed smasher
       objectReference: {fileID: 0}
+    - target: {fileID: 847842560901333839, guid: ed70c433d406c874c9f39d6d41ffe9df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1920,6 +1931,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: proximity smasher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}

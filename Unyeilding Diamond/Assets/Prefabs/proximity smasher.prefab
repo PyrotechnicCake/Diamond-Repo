@@ -149,7 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 1798211005062467160}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
+  fallingPlatforms: []
+  movingPlatforms: []
 --- !u!1 &1798211005588298795
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +169,7 @@ GameObject:
   - component: {fileID: 1798211005588298794}
   m_Layer: 8
   m_Name: proximity smasher
-  m_TagString: MovingPlatform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
