@@ -1528,7 +1528,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 532782293}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!1 &665791259
 GameObject:
@@ -2287,7 +2289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1801417147}
-  zoomOut: 0
   priorityNum: 2
 --- !u!4 &926769526
 Transform:
@@ -3196,7 +3197,7 @@ GameObject:
   - component: {fileID: 1169816222}
   m_Layer: 0
   m_Name: respawn
-  m_TagString: Respawn
+  m_TagString: StartPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3743,7 +3744,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 532782293}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!61 &1472308956
 BoxCollider2D:
@@ -4056,7 +4059,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 532782293}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!114 &1559307785
 MonoBehaviour:
@@ -4375,7 +4380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 532782293}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
   fallingPlatforms: []
 --- !u!61 &1705197148
 BoxCollider2D:
@@ -4657,7 +4664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1801417147}
-  zoomOut: 0
   priorityNum: 0
 --- !u!4 &1740063891
 Transform:

@@ -2686,7 +2686,7 @@ GameObject:
   - component: {fileID: 1452838673}
   m_Layer: 0
   m_Name: Respawn popint
-  m_TagString: Respawn
+  m_TagString: StartPos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
