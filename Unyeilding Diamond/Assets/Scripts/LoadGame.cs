@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoadGame : MonoBehaviour
 {
     public Scene currentLevel;
+    private int levelNum;
     public GameObject player;
+    public GameObject button;
     // Start is called before the first frame update
     void Start()
     {
         currentLevel.name = PlayerPrefs.GetString("currentLevel");
+        levelNum = PlayerPrefs.GetInt("levelNum");
+        if(PlayerPrefs.GetInt("hasJump") == 0)
+        {
+            button.GetComponent<Button>().interactable = false;
+        }
     }
 
     // Update is called once per frame
@@ -19,9 +27,10 @@ public class LoadGame : MonoBehaviour
         
     }
 
-    void Load()
+    public void Load()
     {
-        SceneManager.LoadScene(currentLevel.name);
+        Debug.Log(levelNum);
+        SceneManager.LoadScene(levelNum);
         player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = new Vector3(
             PlayerPrefs.GetFloat("PlayerX"),

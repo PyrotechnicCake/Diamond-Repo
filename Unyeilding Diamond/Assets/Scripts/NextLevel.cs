@@ -36,7 +36,11 @@ public class NextLevel : MonoBehaviour
         });
 
             Debug.Log("Change Level");
-            SceneManager.LoadScene(nextLevel);
+            LoadNext();
         }
+    }
+    public void LoadNext()
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 }

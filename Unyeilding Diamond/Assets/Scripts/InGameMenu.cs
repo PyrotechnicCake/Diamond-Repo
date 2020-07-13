@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SaveGame : MonoBehaviour
+public class InGameMenu : MonoBehaviour
 {
+    public GameObject sAndQ;
+    public GameObject options;
+    public GameObject menu;
     public GameObject player;
     public Scene currentScene;
-    
+    private bool menuOpen;
+
     // Start is called before the first frame update
     void Start()
     {
+        sAndQ.SetActive(false);
+        options.SetActive(false);
+        menu.SetActive(false);
+        menuOpen = false;
         player = GameObject.FindGameObjectWithTag("Player");
         currentScene = SceneManager.GetActiveScene();
     }
@@ -21,7 +30,34 @@ public class SaveGame : MonoBehaviour
         
     }
 
-    void Save()
+    public void Clicked()
+    {
+        if (menuOpen)
+        {
+            HideMenu();
+        }
+        else if (!menuOpen)
+        {
+            RevealMenu();
+        }
+    }
+
+    public void RevealMenu()
+    {
+        sAndQ.SetActive(true);
+        options.SetActive(true);
+        menu.SetActive(true);
+        menuOpen = true;
+    }
+    public void HideMenu()
+    {
+        sAndQ.SetActive(false);
+        options.SetActive(false);
+        menu.SetActive(false);
+        menuOpen = false;
+    }
+
+    public void Menu()
     {
         //save level
         PlayerPrefs.SetString("currentLevel", currentScene.name);
@@ -35,22 +71,7 @@ public class SaveGame : MonoBehaviour
         PlayerPrefs.SetInt("hasDash", (player.GetComponent<PlayerController>().hasDash ? 1 : 0));
         PlayerPrefs.SetInt("hasGlide", (player.GetComponent<PlayerController>().hasGlide ? 1 : 0));
         PlayerPrefs.SetInt("extraJumps", player.GetComponent<PlayerController>().extrajumpsMax);
-    }
 
-    public void ResetPlayerPrefs()
-    {
-        //save level
-        PlayerPrefs.SetString("currentLevel", null);
-        PlayerPrefs.SetInt("levelNum", 0);
-        //save player position
-        PlayerPrefs.SetFloat("PlayerX", 0);
-        PlayerPrefs.SetFloat("PlayerY", 0);
-        PlayerPrefs.SetFloat("PlayerZ", 0);
-        //save player stats
-        PlayerPrefs.SetInt("hasJump", 0);
-        PlayerPrefs.SetInt("hasDash", 0);
-        PlayerPrefs.SetInt("hasGlide", 0);
-        PlayerPrefs.SetInt("extraJumps", 0);
-        Debug.Log("game reset");
+        SceneManager.LoadScene(0);
     }
 }
