@@ -9,6 +9,7 @@ public class KillBox : MonoBehaviour
     public GameObject startPos;
     public GameObject checkpoint1;
     public GameObject checkpoint2;
+    public GameObject checkpoint3;
     private int checkRespawn;
 
     public GameObject[] fallingPlatforms;
@@ -20,6 +21,7 @@ public class KillBox : MonoBehaviour
         startPos = GameObject.FindGameObjectWithTag("StartPos");
         checkpoint1 = GameObject.FindGameObjectWithTag("Checkpoint1");
         checkpoint2 = GameObject.FindGameObjectWithTag("Checkpoint2");
+        checkpoint3 = GameObject.FindGameObjectWithTag("Checkpoint3");
 
         //respawn = GameObject.FindGameObjectWithTag("Respawn");
         if (fallingPlatforms.Length == 0)
@@ -63,7 +65,12 @@ public class KillBox : MonoBehaviour
             //reset player
             player.transform.position = checkpoint2.transform.position;
         }
-        
+        else if (checkRespawn == 3)
+        {
+            //reset player
+            player.transform.position = checkpoint3.transform.position;
+        }
+
         //reset platforms
         foreach (GameObject fallingPlatform in fallingPlatforms)
         {
