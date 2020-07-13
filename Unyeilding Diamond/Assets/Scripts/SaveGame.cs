@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class SaveGame : MonoBehaviour
 {
     public GameObject player;
+    public Scene currentScene;
     
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        currentScene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class SaveGame : MonoBehaviour
     void Save()
     {
         //save level
+        PlayerPrefs.SetString("currentLevel", currentScene.name);
         //save player position
         PlayerPrefs.SetFloat("PlayerX", player.transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", player.transform.position.y);
