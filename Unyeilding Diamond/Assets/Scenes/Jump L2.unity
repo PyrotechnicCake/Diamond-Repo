@@ -1532,6 +1532,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   fallingPlatforms: []
+  movingPlatforms: []
 --- !u!1 &665791259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,6 +3749,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   fallingPlatforms: []
+  movingPlatforms: []
 --- !u!61 &1472308956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4063,6 +4065,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   fallingPlatforms: []
+  movingPlatforms: []
 --- !u!114 &1559307785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4384,6 +4387,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   fallingPlatforms: []
+  movingPlatforms: []
 --- !u!61 &1705197148
 BoxCollider2D:
   m_ObjectHideFlags: 0
