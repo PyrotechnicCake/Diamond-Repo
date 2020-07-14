@@ -780,11 +780,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293639225}
-        m_MethodName: 
+        m_MethodName: SaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -835,12 +835,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 293639220}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a506eeed6cf794197d4b0ef6387ccf, type: 3}
+  m_Script: {fileID: 11500000, guid: 629e9e5276f25ba41a17b7b338bfd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 602779760}
+  player: {fileID: 0}
   currentScene:
     m_Handle: 0
+  levelNum: 0
+  saveAndQuit: 1
+  saveAndMenu: 0
 --- !u!1 &343150576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1089,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 600524921}
-        m_MethodName: Menu
+        m_MethodName: SaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1141,21 +1144,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 600524916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1518b679e96ad5a41959fd7c1ad1c01f, type: 3}
+  m_Script: {fileID: 11500000, guid: 629e9e5276f25ba41a17b7b338bfd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sAndQ: {fileID: 293639220}
-  options: {fileID: 2074507972}
-  menu: {fileID: 600524916}
   player: {fileID: 0}
   currentScene:
     m_Handle: 0
---- !u!1 &602779760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3223532695174580998, guid: e7aeff37c9f089a4fa23b73bd68d172b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3223532695798001476}
-  m_PrefabAsset: {fileID: 0}
+  levelNum: 0
+  saveAndQuit: 0
+  saveAndMenu: 1
 --- !u!1 &711343561
 GameObject:
   m_ObjectHideFlags: 0
