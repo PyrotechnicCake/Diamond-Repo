@@ -49,9 +49,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         hasJump = gm.hasJump;
         hasDash = gm.hasDash;
         hasGlide = gm.hasGlide;

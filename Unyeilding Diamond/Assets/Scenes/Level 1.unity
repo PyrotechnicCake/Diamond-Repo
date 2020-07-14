@@ -2392,8 +2392,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  indie: {fileID: 0}
   currentScene:
     m_Handle: 0
+  gm: {fileID: 0}
   levelNum: 0
   saveAndQuit: 1
   saveAndMenu: 0
@@ -3270,6 +3272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1452838673}
+  - component: {fileID: 1452838674}
+  - component: {fileID: 1452838675}
   m_Layer: 0
   m_Name: Respawn popint
   m_TagString: StartPos
@@ -3291,6 +3295,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1452838674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452838672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6dc20cfbceead4c9f105ad3eaa4a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCheckPointNum: 0
+  cam: {fileID: 1828347501}
+  resetCamPriorityTo: 0
+--- !u!58 &1452838675
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452838672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1481970001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3449,8 +3484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  indie: {fileID: 0}
   currentScene:
     m_Handle: 0
+  gm: {fileID: 0}
   levelNum: 0
   saveAndQuit: 0
   saveAndMenu: 1
