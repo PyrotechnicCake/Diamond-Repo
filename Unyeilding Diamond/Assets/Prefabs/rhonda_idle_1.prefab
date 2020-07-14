@@ -218,7 +218,7 @@ MonoBehaviour:
   hasDash: 1
   dashReady: 1
   dashRefreshTime: 1
-  dashSpeed: 170
+  dashSpeed: 200
   dashTime: 0.1
   hasGlide: 0
   glidePower: 10
