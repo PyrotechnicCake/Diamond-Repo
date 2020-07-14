@@ -24,8 +24,10 @@ public class Respawn : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.GetComponent<PlayerController>().checkpointNum = myCheckPointNum;
+
+            collision.GetComponent<PlayerController>().myLastCheckpoint = gameObject;
             cam.Priority = resetCamPriorityTo;
+            
         }
     }
 }

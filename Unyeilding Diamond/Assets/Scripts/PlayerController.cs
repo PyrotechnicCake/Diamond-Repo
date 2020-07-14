@@ -43,12 +43,21 @@ public class PlayerController : MonoBehaviour
     //gameplay checks
     public int deathCount = 0;
     public int checkpointNum = 0;
+    public GameObject myLastCheckpoint;
+    public GameManager gm;
     
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
+        hasJump = gm.hasJump;
+        hasDash = gm.hasDash;
+        hasGlide = gm.hasGlide;
+        extrajumpsMax = gm.extraJumps;
+        myLastCheckpoint = GameObject.FindGameObjectWithTag(gm.lastCheckpoint);
+        gameObject.transform.position = gm.playerposition;
     }
 
     // Update is called once per frame

@@ -24,12 +24,6 @@ public class InGameMenu : MonoBehaviour
         currentScene = SceneManager.GetActiveScene();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Clicked()
     {
         if (menuOpen)
@@ -39,6 +33,7 @@ public class InGameMenu : MonoBehaviour
         else if (!menuOpen)
         {
             RevealMenu();
+            Debug.Log("Show Menu");
         }
     }
 

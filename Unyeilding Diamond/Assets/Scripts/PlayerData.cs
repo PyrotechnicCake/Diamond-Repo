@@ -9,7 +9,8 @@ public class PlayerData
     public bool dash;
     public bool glide;
     public int extraJumps;
-    public int checkPointNum;
+    public string checkpointTag;
+    //public float [] checkpointPos;
     public float[] position;
 
     public PlayerData (PlayerController player)
@@ -18,7 +19,12 @@ public class PlayerData
         dash = player.hasDash;
         glide = player.hasGlide;
         extraJumps = player.extrajumpsMax;
-        checkPointNum = player.checkpointNum;
+        checkpointTag = player.myLastCheckpoint.tag;
+
+        /*checkpointPos = new float[3];
+        checkpointPos[0] = player.myLastCheckpoint.transform.position.x;
+        checkpointPos[1] = player.myLastCheckpoint.transform.position.y;
+        checkpointPos[2] = player.myLastCheckpoint.transform.position.z;*/
 
         position = new float[3];
         position[0] = player.transform.position.x;

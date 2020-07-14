@@ -39,7 +39,6 @@ public class KillBox : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            checkRespawn = col.gameObject.GetComponent<PlayerController>().checkpointNum;
             Respawn(col.gameObject, checkRespawn);
            
         }
@@ -50,27 +49,9 @@ public class KillBox : MonoBehaviour
         //add to death count
         player.GetComponent<PlayerController>().deathCount++;
         //find last checkpoint
-        if(checkRespawn == 0)
-        {
-            //reset player
-            player.transform.position = startPos.transform.position;
-        }
-        else if(checkRespawn == 1)
-        {
-            //reset player
-            player.transform.position = checkpoint1.transform.position;
-        }
-        else if(checkRespawn == 2)
-        {
-            //reset player
-            player.transform.position = checkpoint2.transform.position;
-        }
-        else if (checkRespawn == 3)
-        {
-            //reset player
-            player.transform.position = checkpoint3.transform.position;
-        }
+        player.transform.position = player.GetComponent<PlayerController>().myLastCheckpoint.transform.position;
 
+       
         //reset platforms
         foreach (GameObject fallingPlatform in fallingPlatforms)
         {
