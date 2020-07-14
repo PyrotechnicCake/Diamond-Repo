@@ -323,13 +323,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 210691747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e181c3e73c5d5694a8c57d61f22f28c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 629e9e5276f25ba41a17b7b338bfd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel:
-    m_Handle: 0
   player: {fileID: 0}
-  button: {fileID: 210691747}
+  currentScene:
+    m_Handle: 0
+  levelNum: 0
+  saveAndQuit: 0
+  saveAndMenu: 0
 --- !u!114 &210691750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +376,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 210691749}
-        m_MethodName: Load
+        m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1310,12 +1312,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 950845379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09a506eeed6cf794197d4b0ef6387ccf, type: 3}
+  m_Script: {fileID: 11500000, guid: 629e9e5276f25ba41a17b7b338bfd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   currentScene:
     m_Handle: 0
+  levelNum: 0
+  saveAndQuit: 0
+  saveAndMenu: 0
 --- !u!114 &950845382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1360,7 +1365,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 950845381}
-        m_MethodName: ResetPlayerPrefs
+        m_MethodName: ResetGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
