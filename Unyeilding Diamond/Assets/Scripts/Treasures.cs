@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Treasures : MonoBehaviour
-{
+{  
     public enum TreasureTypes
     {
         Jump,

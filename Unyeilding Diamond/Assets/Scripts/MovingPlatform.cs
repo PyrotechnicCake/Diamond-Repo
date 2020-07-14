@@ -65,7 +65,7 @@ public class MovingPlatform : MonoBehaviour
     }
     public void Return()
     {
-        isActive = true;
+        isActive = false;
         transform.position = startPos;
     }
 }
