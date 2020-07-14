@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator anim;
+    
     //basic movement stuff
     private float speed;
     public float jumpForce;
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
@@ -69,11 +72,12 @@ public class PlayerController : MonoBehaviour
         moveInput = Input.GetAxisRaw("Horizontal");
         vertMoveInput = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-
+        anim.SetFloat("Moveinput", Mathf.Abs(moveInput)); // inorder to detect movement we pass the moveinput as a float to the animator which has condition where if moveinput is greater than 0 it would play the animation.
         if(facingRight == false && moveInput > 0)
         {
             Flip();
-        }else if (facingRight == true && moveInput < 0)
+        }
+        else if (facingRight == true && moveInput < 0)
         {
             Flip();
         }
