@@ -8,12 +8,13 @@ public class PopupText : MonoBehaviour
     public int PopTime;
     
     public GameObject Pop;
-    MeshRenderer P;
+   
+    SpriteRenderer P;
     
     // Start is called before the first frame update
     void Start()
     {
-        P = Pop.GetComponent<MeshRenderer>();
+        P = Pop.GetComponent<SpriteRenderer>();
         P.enabled = false;
     }
 
