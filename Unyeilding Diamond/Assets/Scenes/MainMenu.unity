@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5d00694780998459c3d7dfd0286de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Level 1
+  nextLevel: Tutorial
 --- !u!114 &248883916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,7 +1535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6a7eadcab23e6419957489752c3b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasJump: 1
+  hasJump: 0
   hasDash: 0
   hasGlide: 0
   extraJumps: 0

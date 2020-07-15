@@ -15,6 +15,7 @@ public class Treasures : MonoBehaviour
     }
 
     public TreasureTypes myType;
+    public GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class Treasures : MonoBehaviour
             case TreasureTypes.Fly:
                 break;
         }
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -43,21 +45,25 @@ public class Treasures : MonoBehaviour
         if(collision.gameObject.tag == "Player" && myType == TreasureTypes.Jump)
         {
             collision.GetComponent<PlayerController>().hasJump = true;
+            gm.hasJump = true;
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.AddJump)
         {
             collision.GetComponent<PlayerController>().extrajumpsMax++;
+            gm.extraJumps ++;
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Dash)
         {
             collision.GetComponent<PlayerController>().hasDash = true;
+            gm.hasDash = true;
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Glide)
         {
             collision.GetComponent<PlayerController>().hasGlide = true;
+            gm.hasGlide = true;
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Fly)
