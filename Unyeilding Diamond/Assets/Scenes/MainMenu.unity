@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57b67fe4c2f6de4e8e37b88ba0d4c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   jumpForce: 0
   sprintTimer: 0
   time: 0
@@ -1535,9 +1536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasJump: 1
-  hasDash: 1
-  hasGlide: 1
-  extraJumps: 2
+  hasDash: 0
+  hasGlide: 0
+  extraJumps: 0
   lastCheckpoint: 
   playerposition: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
