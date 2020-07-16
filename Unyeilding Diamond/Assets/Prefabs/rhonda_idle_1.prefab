@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 2465877281753036675}
   - component: {fileID: 2465877281753036674}
   - component: {fileID: 8838557019388346480}
+  - component: {fileID: 6722938553475669173}
   m_Layer: 0
   m_Name: rhonda_idle_1
   m_TagString: Player
@@ -250,3 +251,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6722938553475669173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465877281753036673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868ff775f3d767948a8c858585307caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 5
+  lowJumpMultiplier: 10
