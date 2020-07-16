@@ -71,20 +71,6 @@ public class PlayerController : MonoBehaviour
 
 
         moveInput = Input.GetAxisRaw("Horizontal");
-        /*moveInput = rb.velocity.x;
-        moveInput += Input.GetAxisRaw("Horizontal");
-        if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01)
-        {
-            moveInput *= Mathf.Pow(1f - dampingStop, Time.deltaTime * 10f);
-        }
-        else if(Mathf.Sign(Input.GetAxisRaw("Horizontal")) != Mathf.Sign(Input.GetAxisRaw("Horizontal")))
-        {
-            moveInput *= Mathf.Pow(1f - dampingTurn, Time.deltaTime * 10f);
-        }
-        else
-        {
-            moveInput *= Mathf.Pow(1f - dampingBasic, Time.deltaTime * 10f);
-        }*/
         vertMoveInput = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
         anim.SetFloat("Moveinput", Mathf.Abs(moveInput)); // inorder to detect movement we pass the moveinput as a float to the animator which has condition where if moveinput is greater than 0 it would play the animation.
