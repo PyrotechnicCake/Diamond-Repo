@@ -1398,7 +1398,7 @@ PrefabInstance:
     - target: {fileID: 7153818690317725734, guid: f018abac7f19ec441a5941cd625610a3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 19.089996
+      value: 19.089966
       objectReference: {fileID: 0}
     - target: {fileID: 7153818690317725734, guid: f018abac7f19ec441a5941cd625610a3,
         type: 3}
@@ -2073,6 +2073,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2465877281753036675, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_Offset.x
@@ -2092,6 +2112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 6.6315393
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693251712056313850, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081de32af9001a348b40f8b133e50bb0, type: 3}
