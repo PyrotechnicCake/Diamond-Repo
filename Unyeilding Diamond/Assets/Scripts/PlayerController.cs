@@ -104,11 +104,17 @@ public class PlayerController : MonoBehaviour
             extraJumps = extrajumpsMax;
             //reset gravity
             rb.gravityScale = originalGravity;
+            anim.SetBool("Jump", false);
+        }
+        else
+        {
+            anim.SetBool("Jump", true);
         }
         if (Input.GetButtonDown("Jump") && extraJumps > 0)
         {
             //diable glide
             rb.gravityScale = originalGravity;
+            anim.SetTrigger("Takeoff");
             //jump
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
@@ -117,6 +123,7 @@ public class PlayerController : MonoBehaviour
         {
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
+            anim.SetTrigger("Takeoff");
         }
         //dash
         if(hasDash && dashReady && Input.GetButtonDown("Dash"))
