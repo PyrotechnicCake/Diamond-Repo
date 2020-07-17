@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05de9bc8cbc1b1b44ba7abc651f892c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killBox: {fileID: 0}
+  killBox: {fileID: 928232021253081360}
   startPos: {fileID: 0}
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
