@@ -15,18 +15,19 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeed = 2;
     public float walkSpeed = 5;
     private bool isSprinting = false;
-    public float dampingStop, dampingTurn, dampingBasic;
+    public float falling;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
     //jump checks
     public bool hasJump = false;
-    private bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     private float checkRadius = 0.5f;
     public LayerMask whatIsGround;
     private int extraJumps;
     public int extrajumpsMax;
+    public bool isJumping;
     //dash checks
     public bool hasDash = false;
     public bool dashReady = true;
@@ -97,9 +98,14 @@ public class PlayerController : MonoBehaviour
 
      void Update()
     {
+        if(isGrounded == false && falling > rb.position.y)
+        {
+            anim.SetBool("Falling", true);
+        }
         //jump
         if (isGrounded)
         {
+            anim.SetBool("Falling", false);
             //reset jumps
             extraJumps = extrajumpsMax;
             //reset gravity
@@ -159,7 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, vertMoveInput * flySpeed);
         }
-
+        falling = rb.position.y;
     }
 
     IEnumerator Dash()
