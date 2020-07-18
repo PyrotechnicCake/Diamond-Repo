@@ -7,7 +7,7 @@ public class FallingPlatform : MonoBehaviour
     public float crumbleTime;
     public Collider2D myCollider;
     private Rigidbody2D rb;
-    public Vector2 startPos;
+    public Vector3 startPos;
     
     // Start is called before the first frame update
     void Start()

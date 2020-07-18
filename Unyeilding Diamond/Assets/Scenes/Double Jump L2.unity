@@ -180,7 +180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2645149}
   m_LocalRotation: {x: 0.026176924, y: 0, z: 0, w: 0.99965733}
-  m_LocalPosition: {x: -74.31, y: 30.20336, z: -12.486295}
+  m_LocalPosition: {x: -124.5, y: -0.4766409, z: -12.486295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 406509285}
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 19964110}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &19964110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1693,7 +1693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106637430}
   m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: -74.31, y: 30.551558, z: -12.461947}
+  m_LocalPosition: {x: -124.5, y: -0.1284422, z: -12.4619465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1997257946}
@@ -2245,7 +2245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 156052920}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &156052920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3699,9 +3699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233272437b82ea42a7b92ba38e3df13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crumbleTime: 1
+  crumbleTime: 2
   myCollider: {fileID: 249396591}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &249396591
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 300337940}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &300337940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4269,7 +4269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 310597054}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &310597054
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4369,7 +4369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 329330286}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &329330286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4785,7 +4785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 357483934}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &357483934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5253,7 +5253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 387780491}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &387780491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5946,7 +5946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410979831}
   m_LocalRotation: {x: 0.026176924, y: 0, z: 0, w: 0.99965733}
-  m_LocalPosition: {x: -74.31, y: 30.20336, z: -12.486295}
+  m_LocalPosition: {x: -124.5, y: -0.4766409, z: -12.486295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6501,7 +6501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 482261736}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &482261736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6569,7 +6569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 490088203}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &490088203
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7697,9 +7697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8233272437b82ea42a7b92ba38e3df13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crumbleTime: 1
+  crumbleTime: 2
   myCollider: {fileID: 581069864}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &581069864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8066,7 +8066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594260854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30853745, y: 14.989046, z: 0}
+  m_LocalPosition: {x: 0.30853745, y: 14.808, z: 0}
   m_LocalScale: {x: 0.25207162, y: 4.121205, z: 5}
   m_Children: []
   m_Father: {fileID: 1738682370}
@@ -10043,7 +10043,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -10609,7 +10609,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -11533,7 +11533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 820967234}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &820967234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12037,7 +12037,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -13780,7 +13780,7 @@ PrefabInstance:
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.66
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -13831,6 +13831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 13.987499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8234
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298794, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -14806,12 +14811,12 @@ PrefabInstance:
     - target: {fileID: 2465877281753036686, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.31
+      value: -124.5
       objectReference: {fileID: 0}
     - target: {fileID: 2465877281753036686, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.68
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2465877281753036686, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
@@ -15472,7 +15477,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -16874,7 +16879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1241207032}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1241207032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20439,7 +20444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 1599740324}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1599740324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21075,7 +21080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 1631405312}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1631405312
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21143,12 +21148,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c370d93469b456e4d9141adec607038e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c370d93469b456e4d9141adec607038e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c370d93469b456e4d9141adec607038e,
         type: 3}
@@ -22757,7 +22762,7 @@ PrefabInstance:
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3.28
       objectReference: {fileID: 0}
     - target: {fileID: 847842560901333832, guid: ed70c433d406c874c9f39d6d41ffe9df,
         type: 3}
@@ -25012,7 +25017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 2
   myCollider: {fileID: 1966954282}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1966954282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26683,12 +26688,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a08630d141579f247b903ad536ac3a3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -119.89
+      value: -120.2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a08630d141579f247b903ad536ac3a3e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.8
+      value: 33.76
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a08630d141579f247b903ad536ac3a3e,
         type: 3}

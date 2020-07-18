@@ -27,7 +27,7 @@ public class TimedSmash : MonoBehaviour
         if (smash)
         {
             gameObject.GetComponentInChildren<KillBox>().killBox.enabled = true;
-            transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
             if (transform.position == target)
             {
                 
@@ -38,7 +38,7 @@ public class TimedSmash : MonoBehaviour
         if (resetting)
         {
             gameObject.GetComponentInChildren<KillBox>().killBox.enabled = false;
-            transform.position = Vector2.MoveTowards(transform.position, returnPos, (speed / 2) * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, returnPos, (speed / 2) * Time.deltaTime);
             if(transform.position == returnPos)
             {
                 resetting = false;
