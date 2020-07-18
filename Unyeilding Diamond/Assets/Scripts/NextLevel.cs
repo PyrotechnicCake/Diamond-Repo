@@ -9,11 +9,14 @@ public class NextLevel : MonoBehaviour
     public string nextLevel;
     private Scene thisLevel;
     private float elapsedTime;
+
+    public Animator levelChanger;
+    public int time = 1;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        levelChanger = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +44,13 @@ public class NextLevel : MonoBehaviour
     }
     public void LoadNext()
     {
+        levelChanger.SetTrigger("FadeOut");
+        StartCoroutine(ChangeTime());
+    }
+
+    IEnumerator ChangeTime()
+    {
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene(nextLevel);
     }
 }

@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 141583754}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &141583754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7965,6 +7965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Dash L1
+  levelChanger: {fileID: 0}
+  time: 1
 --- !u!1001 &575685123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9301,7 +9303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 695150783}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &695150783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12620,7 +12622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 993699877}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1017598245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8cdd86143a70e504e9ff1cbb1146353e,
@@ -13853,7 +13855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1173445578}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1178946750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95cbd2cce0d0ed540917de43ec8324b5,
@@ -15954,7 +15956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1299493277}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1299493277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16591,7 +16593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1343726185}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1343726185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17800,7 +17802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myCheckPointNum: 1
-  cam: {fileID: 0}
+  cam: {fileID: 1801417147}
   resetCamPriorityTo: 0
 --- !u!61 &1471823961
 BoxCollider2D:
@@ -18861,7 +18863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1566385194}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1566385194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19013,7 +19015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1571669717}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!61 &1571669717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22724,7 +22726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crumbleTime: 1
   myCollider: {fileID: 1879609672}
-  startPos: {x: 0, y: 0}
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1888742550
 PrefabInstance:
   m_ObjectHideFlags: 0
