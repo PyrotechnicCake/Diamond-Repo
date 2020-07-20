@@ -16,9 +16,18 @@ public class InGameMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sAndQ.SetActive(false);
-        options.SetActive(false);
-        menu.SetActive(false);
+        if(sAndQ != null)
+        {
+            sAndQ.SetActive(false);
+        }
+        if (options != null)
+        {
+            options.SetActive(false);
+        }
+        if(menu != null)
+        {
+            menu.SetActive(false);
+        }
         menuOpen = false;
         player = GameObject.FindGameObjectWithTag("Player");
         currentScene = SceneManager.GetActiveScene();

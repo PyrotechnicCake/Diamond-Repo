@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 216461202}
   - component: {fileID: 216461201}
   - component: {fileID: 216461203}
+  - component: {fileID: 216461204}
   m_Layer: 0
   m_Name: player data
   m_TagString: Player
@@ -463,10 +464,10 @@ MonoBehaviour:
   falling: 0
   hasJump: 0
   isGrounded: 0
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 216461202}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   extrajumpsMax: 0
   isJumping: 0
   hasDash: 0
@@ -481,7 +482,7 @@ MonoBehaviour:
   flySpeed: 0
   deathCount: 0
   checkpointNum: 0
-  myLastCheckpoint: {fileID: 0}
+  myLastCheckpoint: {fileID: 1168613155}
   gm: {fileID: 0}
 --- !u!4 &216461202
 Transform:
@@ -518,6 +519,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &216461204
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216461200}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &248883913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1667,7 @@ MonoBehaviour:
   sAndQ: {fileID: 0}
   options: {fileID: 0}
   menu: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 216461200}
   currentScene:
     m_Handle: 0
 --- !u!114 &1075370467
@@ -1740,6 +1760,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075370464}
   m_CullTransparentMesh: 0
+--- !u!1 &1168613155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1168613156}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: StartPos
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1168613156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168613155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 676.7112, y: 177.5094, z: -391.22925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226639735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,7 +1952,7 @@ MonoBehaviour:
   hasDash: 0
   hasGlide: 0
   extraJumps: 0
-  lastCheckpoint: 
+  lastCheckpoint: StartPos
   playerposition: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
   pc: {fileID: 0}
