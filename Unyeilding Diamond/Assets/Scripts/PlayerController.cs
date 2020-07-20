@@ -139,6 +139,7 @@ public class PlayerController : MonoBehaviour
         //glide
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
+            anim.SetBool("Gliding", true);
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity when falling
@@ -148,6 +149,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
+            anim.SetBool("Gliding", true);
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity
@@ -157,6 +159,7 @@ public class PlayerController : MonoBehaviour
         }
         if (hasGlide && Input.GetButtonUp("Glide"))
         {
+            anim.SetBool("Gliding", false);
             //reset gravity
             rb.gravityScale = originalGravity;
             isGliding = false;
