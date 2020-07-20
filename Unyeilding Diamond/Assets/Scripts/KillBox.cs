@@ -46,6 +46,10 @@ public class KillBox : MonoBehaviour
 
     public void Respawn(GameObject player, int checkpointNum)
     {
+        if (player.transform.parent != null)
+        {
+            player.transform.parent = null;
+        }
         //add to death count
         player.GetComponent<PlayerController>().deathCount++;
         //find last checkpoint
