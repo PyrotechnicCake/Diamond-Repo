@@ -4912,6 +4912,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036674, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: myLastCheckpoint
+      value: 
+      objectReference: {fileID: 1473631982}
     - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -4957,11 +4962,6 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 6.6315393
       objectReference: {fileID: 0}
-    - target: {fileID: 2465877281753036674, guid: 081de32af9001a348b40f8b133e50bb0,
-        type: 3}
-      propertyPath: myLastCheckpoint
-      value: 
-      objectReference: {fileID: 1473631982}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081de32af9001a348b40f8b133e50bb0, type: 3}
 --- !u!1 &1933355946 stripped
@@ -5160,7 +5160,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987590924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.36, y: 3.58, z: 0}
+  m_LocalPosition: {x: -5.36, y: 3.58, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5490,7 +5490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112438049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.65, y: -22.51, z: 0}
+  m_LocalPosition: {x: 22.65, y: -22.51, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
