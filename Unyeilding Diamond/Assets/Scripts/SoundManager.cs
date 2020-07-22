@@ -23,7 +23,8 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoad;
-        musicSource.PlayOneShot(titleMusic);
+        musicSource.clip = titleMusic;
+        musicSource.Play();
     }
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
@@ -31,13 +32,16 @@ public class SoundManager : MonoBehaviour
        if(scene.buildIndex == 2)
        {
             musicSource.Stop();
-            musicSource.PlayOneShot(inGameMusicOne);
-            ambienceSource.PlayOneShot(jungleAmb);
+            musicSource.clip = inGameMusicOne;
+            musicSource.Play();
+            ambienceSource.clip = jungleAmb;
+            ambienceSource.Play();
        }
         if (returnToMenu)
         {
             musicSource.Stop();
-            musicSource.PlayOneShot(titleMusic);
+            musicSource.clip = titleMusic;
+            musicSource.Play();
         }
     }
 
