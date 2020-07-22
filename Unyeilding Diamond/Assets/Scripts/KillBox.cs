@@ -10,6 +10,7 @@ public class KillBox : MonoBehaviour
     public GameObject checkpoint1;
     public GameObject checkpoint2;
     public GameObject checkpoint3;
+    public GameObject checkpoint4;
     private int checkRespawn;
 
     public GameObject[] fallingPlatforms;
@@ -22,6 +23,7 @@ public class KillBox : MonoBehaviour
         checkpoint1 = GameObject.FindGameObjectWithTag("Checkpoint1");
         checkpoint2 = GameObject.FindGameObjectWithTag("Checkpoint2");
         checkpoint3 = GameObject.FindGameObjectWithTag("Checkpoint3");
+        checkpoint4 = GameObject.FindGameObjectWithTag("Checkpoint4");
 
         //respawn = GameObject.FindGameObjectWithTag("Respawn");
         if (fallingPlatforms.Length == 0)
