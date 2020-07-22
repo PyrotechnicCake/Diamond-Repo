@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioSource source;
     public AudioClip titleMusic;
     public AudioClip inGameMusicOne;
+    public bool returnToMenu;
     
     
     // Start is called before the first frame update
@@ -21,9 +22,14 @@ public class SoundManager : MonoBehaviour
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
        if(scene.buildIndex == 2)
-        {
+       {
             source.Stop();
             source.PlayOneShot(inGameMusicOne);
+       }
+        if (returnToMenu)
+        {
+            source.Stop();
+            source.PlayOneShot(titleMusic);
         }
     }
 

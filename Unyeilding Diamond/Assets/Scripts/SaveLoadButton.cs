@@ -9,6 +9,7 @@ public class SaveLoadButton : MonoBehaviour
     public GameObject indie;
     public Scene currentScene;
     public GameManager gm;
+    public SoundManager sm;
     public int levelNum;
     public bool saveAndQuit = false;
     public bool saveAndMenu = false;
@@ -18,6 +19,7 @@ public class SaveLoadButton : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         currentScene = SceneManager.GetActiveScene();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        sm = GameObject.FindGameObjectWithTag("GM").GetComponent<SoundManager>();
     }
 
     public void SaveGame()
@@ -28,6 +30,7 @@ public class SaveLoadButton : MonoBehaviour
         if (saveAndMenu)
         {
             SceneManager.LoadScene(1);
+            sm.returnToMenu = true;
         }else if (saveAndQuit)
         {
             Application.Quit();
