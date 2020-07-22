@@ -463,6 +463,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1001 &108848090
@@ -1980,6 +1981,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -85
       objectReference: {fileID: 0}
+    - target: {fileID: 1445567324339599251, guid: f018abac7f19ec441a5941cd625610a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f018abac7f19ec441a5941cd625610a3, type: 3}
 --- !u!1001 &440101033
@@ -2204,6 +2210,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1 &494721716 stripped
@@ -2255,6 +2262,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1001 &496838228
@@ -4478,6 +4486,7 @@ GameObject:
   - component: {fileID: 1114104591}
   - component: {fileID: 1114104590}
   - component: {fileID: 1114104593}
+  - component: {fileID: 1114104594}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4584,6 +4593,15 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!45 &1114104594
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114104589}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
 --- !u!1 &1172765005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a08630d141579f247b903ad536ac3a3e,
@@ -5251,6 +5269,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1001 &1345598155

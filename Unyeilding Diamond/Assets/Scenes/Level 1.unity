@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 60651711}
   - component: {fileID: 60651710}
   - component: {fileID: 60651713}
+  - component: {fileID: 60651714}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -569,6 +570,15 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!45 &60651714
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60651709}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
 --- !u!1001 &94380554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -824,6 +834,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &120100615
@@ -959,6 +970,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &145731472
@@ -1094,6 +1106,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &166970535
@@ -1681,6 +1694,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &279675657
@@ -2343,6 +2357,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &484129046
@@ -4066,6 +4081,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &887203411
@@ -4416,7 +4432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &951524047
@@ -4629,6 +4645,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1018970173
@@ -4932,6 +4949,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1062728741
@@ -6025,6 +6043,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1277479428
@@ -6113,6 +6132,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1363659475
@@ -6731,6 +6751,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1516728882
@@ -7457,6 +7478,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1640488228
@@ -7817,6 +7839,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1730329698
@@ -8068,6 +8091,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1825940577
@@ -8806,6 +8830,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1903795278
@@ -8979,6 +9004,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1942452323
@@ -9230,6 +9256,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &2009149279
