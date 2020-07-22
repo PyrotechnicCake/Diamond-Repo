@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource source;
+    public AudioSource musicSource;
+    public AudioSource ambienceSource;
+    public AudioSource SFXSource;
+
     public AudioClip titleMusic;
     public AudioClip inGameMusicOne;
+    public AudioClip jungleAmb;
+    public AudioClip ruinsAmb;
+    public AudioClip waterfallAmb;
+    public AudioClip waterfallFoley;
+
     public bool returnToMenu;
     
     
@@ -15,21 +23,21 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoad;
-        source = GetComponent<AudioSource>();
-        source.PlayOneShot(titleMusic);
+        musicSource.PlayOneShot(titleMusic);
     }
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
        if(scene.buildIndex == 2)
        {
-            source.Stop();
-            source.PlayOneShot(inGameMusicOne);
+            musicSource.Stop();
+            musicSource.PlayOneShot(inGameMusicOne);
+            ambienceSource.PlayOneShot(jungleAmb);
        }
         if (returnToMenu)
         {
-            source.Stop();
-            source.PlayOneShot(titleMusic);
+            musicSource.Stop();
+            musicSource.PlayOneShot(titleMusic);
         }
     }
 
