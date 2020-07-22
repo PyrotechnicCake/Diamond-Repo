@@ -149,6 +149,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &7791306
@@ -206,6 +207,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &23282080
@@ -263,6 +265,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &55047813
@@ -1069,6 +1072,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &109709055
@@ -1126,6 +1130,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &111963810
@@ -1273,6 +1278,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &134239621
@@ -1542,6 +1548,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &150736149
@@ -1875,6 +1882,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &177967909
@@ -2054,6 +2062,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &183682519
@@ -2111,6 +2120,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &186716478
@@ -2916,6 +2926,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &255626011
@@ -3117,6 +3128,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &262575964
@@ -4223,6 +4235,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &332900699
@@ -4598,6 +4611,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &360431950
@@ -5257,6 +5271,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &415529105
@@ -6214,6 +6229,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &452198751
@@ -6477,6 +6493,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &471732699
@@ -7135,6 +7152,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &527611710
@@ -7231,6 +7249,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &527768911
@@ -7759,6 +7778,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &576643292
@@ -8316,6 +8336,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &639854469
@@ -8412,6 +8433,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &643155432
@@ -8529,6 +8551,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &644756424
@@ -8896,6 +8919,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &678103546
@@ -10203,6 +10227,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &873655215
@@ -10581,6 +10606,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &903880067
@@ -10861,6 +10887,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &921277147
@@ -11346,6 +11373,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &938643220
@@ -12185,6 +12213,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1017598248
@@ -13104,6 +13133,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1149889183
@@ -13714,6 +13744,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1189292384
@@ -13900,6 +13931,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1207575822
@@ -14133,6 +14165,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1218279539
@@ -14943,6 +14976,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1260557841
@@ -15522,6 +15556,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1310004006
@@ -15579,6 +15614,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1320165621
@@ -15970,6 +16006,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1332958521
@@ -16279,6 +16316,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1381022252
@@ -17241,6 +17279,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1472308956
@@ -17526,6 +17565,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1478677100
@@ -18076,6 +18116,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1546507574
@@ -18595,6 +18636,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1594361446
@@ -19263,6 +19305,7 @@ GameObject:
   - component: {fileID: 1648625897}
   - component: {fileID: 1648625896}
   - component: {fileID: 1648625899}
+  - component: {fileID: 1648625900}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -19369,6 +19412,15 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!45 &1648625900
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648625895}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
 --- !u!1001 &1649465731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20038,6 +20090,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1705197148
@@ -20488,6 +20541,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1743732232
@@ -20545,6 +20599,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1751576098
@@ -21206,6 +21261,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1808594839
@@ -22131,6 +22187,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1890681514
@@ -22447,6 +22504,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1936701057
@@ -22960,6 +23018,7 @@ MonoBehaviour:
   checkpoint1: {fileID: 0}
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!61 &1985742437
