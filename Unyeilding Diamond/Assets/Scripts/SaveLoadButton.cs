@@ -27,7 +27,7 @@ public class SaveLoadButton : MonoBehaviour
         PlayerPrefs.SetInt("levelNum", currentScene.buildIndex);
         if (saveAndMenu)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }else if (saveAndQuit)
         {
             Application.Quit();
