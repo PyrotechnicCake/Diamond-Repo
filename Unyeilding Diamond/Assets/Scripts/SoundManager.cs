@@ -29,7 +29,7 @@ public class SoundManager : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-       if(scene.buildIndex == 2)
+       if(scene.buildIndex >= 2)
        {
             musicSource.Stop();
             musicSource.clip = inGameMusicOne;
