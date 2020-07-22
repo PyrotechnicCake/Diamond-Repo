@@ -49,10 +49,15 @@ public class PlayerController : MonoBehaviour
     public int checkpointNum = 0;
     public GameObject myLastCheckpoint;
     public GameManager gm;
+
+    //paticles
+    public ParticleSystem myDash;
     
     // Start is called before the first frame update
     void Start()
     {
+        myDash.Stop();
+
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
@@ -174,10 +179,12 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Dash()
     {
+        myDash.Play(withChildren: true);
         speed += dashSpeed;
         yield return new WaitForSeconds(dashTime);
         speed -= dashSpeed;
         dashReady = false;
+        myDash.Stop();
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
     }
