@@ -111,6 +111,7 @@ public class PlayerController : MonoBehaviour
             //reset gravity
             rb.gravityScale = originalGravity;
             anim.SetBool("Jump", false);
+            anim.SetBool("Gliding", false);
         }
         else
         {
