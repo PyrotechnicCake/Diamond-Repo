@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         hasGlide = gm.hasGlide;
         extrajumpsMax = gm.extraJumps;
         myLastCheckpoint = GameObject.FindGameObjectWithTag(gm.lastCheckpoint);
-        gameObject.transform.position = gm.playerposition;
+        gameObject.transform.position = myLastCheckpoint.transform.position;
     }
 
     // Update is called once per frame
