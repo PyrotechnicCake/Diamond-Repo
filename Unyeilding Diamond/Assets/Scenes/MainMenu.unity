@@ -152,7 +152,7 @@ RectTransform:
   - {fileID: 1974475366}
   - {fileID: 1101796638}
   m_Father: {fileID: 813930928}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -524,6 +524,7 @@ MonoBehaviour:
   checkpointNum: 0
   myLastCheckpoint: {fileID: 1168613155}
   gm: {fileID: 0}
+  myDash: {fileID: 0}
 --- !u!4 &216461202
 Transform:
   m_ObjectHideFlags: 0
@@ -1045,7 +1046,7 @@ RectTransform:
   - {fileID: 408243731}
   - {fileID: 1075370465}
   m_Father: {fileID: 813930928}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1414,9 +1415,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1301955421}
   - {fileID: 466573181}
   - {fileID: 31809759}
+  - {fileID: 1301955421}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2048,7 +2049,7 @@ RectTransform:
   m_Children:
   - {fileID: 1226639736}
   m_Father: {fileID: 813930928}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
