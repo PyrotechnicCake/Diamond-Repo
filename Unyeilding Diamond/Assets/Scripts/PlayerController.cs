@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
     //paticles
     public ParticleSystem myDash;
     public ParticleSystem myDust;
+    public ParticleSystem myJump;
     
     // Start is called before the first frame update
     void Start()
@@ -108,6 +109,11 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("Falling", true);
         }
+
+        //walk run particle control
+        if (isGrounded) {myDust.enableEmission = true;}
+        else {myDust.enableEmission = false;}
+
         //jump
         if (isGrounded)
         {
@@ -125,6 +131,9 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && extraJumps > 0)
         {
+            //emit jump particles
+            myJump.Emit(6);
+
             //diable glide
             rb.gravityScale = originalGravity;
             anim.SetTrigger("Takeoff");
@@ -176,10 +185,6 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, vertMoveInput * flySpeed);
         }
         falling = rb.position.y;
-
-        //walk run particle control
-        if (isGrounded) {myDust.enableEmission = true;}
-        else {myDust.enableEmission = false;}
     }
 
     IEnumerator Dash()
