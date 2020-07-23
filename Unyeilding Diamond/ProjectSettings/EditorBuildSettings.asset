@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Glide L2.unity
     guid: 026fabdba08832047b9285fd5472ddf9
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 4f2e76b19d4ef444eb9f50d362e52e47
   m_configObjects: {}
