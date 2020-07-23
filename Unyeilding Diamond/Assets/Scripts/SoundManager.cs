@@ -43,6 +43,12 @@ public class SoundManager : MonoBehaviour
             musicSource.clip = titleMusic;
             musicSource.Play();
         }
+        if(scene.buildIndex == 11)
+        {
+            musicSource.Stop();
+            musicSource.clip = titleMusic;
+            musicSource.Play();
+        }
     }
 
     // Update is called once per frame
