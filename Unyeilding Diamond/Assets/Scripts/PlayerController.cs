@@ -143,6 +143,9 @@ public class PlayerController : MonoBehaviour
             extraJumps--;
         }else if (hasJump && Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
         {
+            //emit jump particles
+            myJump.Emit(6);
+
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Takeoff");
