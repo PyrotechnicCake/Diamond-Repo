@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
     //paticles
     public ParticleSystem myDash;
+    public ParticleSystem myDust;
     
     // Start is called before the first frame update
     void Start()
@@ -175,6 +176,10 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, vertMoveInput * flySpeed);
         }
         falling = rb.position.y;
+
+        //walk run particle control
+        if (isGrounded) {myDust.enableEmission = true;}
+        else {myDust.enableEmission = false;}
     }
 
     IEnumerator Dash()
