@@ -119,5 +119,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killBox: {fileID: 0}
-  respawn: {fileID: 0}
+  startPos: {fileID: 0}
+  checkpoint1: {fileID: 0}
+  checkpoint2: {fileID: 0}
+  checkpoint3: {fileID: 0}
+  checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
+  movingPlatforms: []
+  anim: {fileID: 0}

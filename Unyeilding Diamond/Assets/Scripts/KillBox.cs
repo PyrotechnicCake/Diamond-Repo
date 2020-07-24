@@ -14,10 +14,13 @@ public class KillBox : MonoBehaviour
     public GameObject gm;
     public GameObject[] fallingPlatforms;
     public GameObject[] movingPlatforms;
+
+    public Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         startPos = GameObject.FindGameObjectWithTag("StartPos");
         checkpoint1 = GameObject.FindGameObjectWithTag("Checkpoint1");
         checkpoint2 = GameObject.FindGameObjectWithTag("Checkpoint2");
@@ -42,8 +45,11 @@ public class KillBox : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+
+            anim.SetBool("Death Finish", false);
             Respawn(col.gameObject);
-           
+            anim.SetTrigger("Death");
+
         }
     }
 
@@ -57,9 +63,10 @@ public class KillBox : MonoBehaviour
         }
         gm.GetComponent<SoundManager>().PlayerDied();
         StartCoroutine(DeathAnimation(player));
-        
+ 
 
-       
+
+
         //reset platforms
         foreach (GameObject fallingPlatform in fallingPlatforms)
         {
@@ -79,12 +86,16 @@ public class KillBox : MonoBehaviour
 
     IEnumerator DeathAnimation(GameObject player)
     {
-        yield return new WaitForSeconds(8);
+
+        yield return new WaitForSeconds(6);
+
         //play death Anim instead?
         //add to death count
         player.GetComponent<PlayerController>().deathCount++;
         //find last checkpoint
         player.transform.position = player.GetComponent<PlayerController>().myLastCheckpoint.transform.position;
         player.GetComponent<PlayerController>().enabled = true;
+        anim.SetBool("Death Finish", true);
+      
     }
 }

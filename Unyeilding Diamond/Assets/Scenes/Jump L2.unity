@@ -153,6 +153,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &7791306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,6 +213,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &23282080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -271,6 +273,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &55047813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -994,6 +997,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &109709055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1053,6 +1057,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &111963810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1202,6 +1207,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &134239621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1473,6 +1479,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &150736149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1808,6 +1815,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &177967909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1989,6 +1997,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &183682519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2048,6 +2057,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &186716478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2885,6 +2895,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &255626011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3088,6 +3099,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &262575964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4196,6 +4208,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &332900699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4540,6 +4553,128 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 344128066}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &348344141
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1705016968}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_Name
+      value: blockDirt (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 256.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -3.7493994e-33
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 39.065453
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.445766
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95cbd2cce0d0ed540917de43ec8324b5, type: 3}
+--- !u!4 &348344142 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 348344141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &348344143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 348344141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &348344144
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348344143}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.49999997, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &360431947 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8cdd86143a70e504e9ff1cbb1146353e,
@@ -4573,6 +4708,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &360431950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5246,6 +5382,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &415529105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6294,6 +6431,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &452198751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6559,6 +6697,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &471732699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7219,6 +7358,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &527611710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7317,6 +7457,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &527768911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7847,6 +7988,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &576643292
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8406,6 +8548,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &639854469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8504,6 +8647,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &643155432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8623,6 +8767,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &644756424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8992,6 +9137,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &678103546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10313,6 +10459,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &873655215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10693,6 +10840,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &903880067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10975,6 +11123,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &921277147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11462,6 +11611,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &938643220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12303,6 +12453,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1017598248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13313,6 +13464,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1149889183
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13925,6 +14077,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1189292384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14113,6 +14266,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1207575822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14315,6 +14469,128 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95cbd2cce0d0ed540917de43ec8324b5, type: 3}
+--- !u!1001 &1215951122
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1705016968}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_Name
+      value: blockDirt (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -3.7493994e-33
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 76.59893
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.445766
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95cbd2cce0d0ed540917de43ec8324b5, type: 3}
+--- !u!4 &1215951123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1215951122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215951124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95cbd2cce0d0ed540917de43ec8324b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1215951122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1215951125
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215951124}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.49999997, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1218279536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8cdd86143a70e504e9ff1cbb1146353e,
@@ -14348,6 +14624,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1218279539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15160,6 +15437,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1260557841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15741,6 +16019,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1310004006
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15800,6 +16079,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1320165621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16193,6 +16473,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1332958521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16504,6 +16785,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1381022252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17468,6 +17750,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1472308956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17755,6 +18038,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1478677100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18307,6 +18591,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1546507574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18828,6 +19113,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1594361446
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20208,6 +20494,8 @@ Transform:
   - {fileID: 254451182}
   - {fileID: 978882409}
   - {fileID: 1044522399}
+  - {fileID: 1215951123}
+  - {fileID: 348344142}
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20283,6 +20571,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1705197148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20735,6 +21024,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1743732232
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20794,6 +21084,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1751576098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21323,6 +21614,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1808594839
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22255,6 +22547,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1890681514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22573,6 +22866,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1936701057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23088,6 +23382,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1985742437
 BoxCollider2D:
   m_ObjectHideFlags: 0
