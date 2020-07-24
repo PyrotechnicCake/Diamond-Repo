@@ -48,8 +48,6 @@ public class KillBox : MonoBehaviour
 
             anim.SetBool("Death Finish", false);
             Respawn(col.gameObject);
-            //anim.SetTrigger("Death");
-
         }
     }
 
@@ -64,7 +62,7 @@ public class KillBox : MonoBehaviour
         }
         gm.GetComponent<SoundManager>().PlayerDied();
         StartCoroutine(DeathAnimation(player));
-        anim.SetTrigger("Death");
+
 
 
 
@@ -88,7 +86,7 @@ public class KillBox : MonoBehaviour
 
     IEnumerator DeathAnimation(GameObject player)
     {
-
+        anim.SetTrigger("Death");
         yield return new WaitForSeconds(6);
 
         //play death Anim instead?
