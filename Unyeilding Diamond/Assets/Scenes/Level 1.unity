@@ -835,8 +835,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &120100615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -971,8 +973,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &145731472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1107,8 +1111,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &166970535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1695,8 +1701,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &279675657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2358,8 +2366,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &484129046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4082,8 +4092,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &887203411
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4296,7 +4308,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.49999997, y: 0.125}
+  m_Offset: {x: -0.49999997, y: 0.048042774}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4307,7 +4319,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.25}
+  m_Size: {x: 0.99999994, y: 0.40391445}
   m_EdgeRadius: 0
 --- !u!4 &906210153 stripped
 Transform:
@@ -4647,8 +4659,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1018970173
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4951,8 +4965,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1062728741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6139,8 +6155,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1277479428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6228,8 +6246,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1363659475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6833,8 +6853,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1516728882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7561,8 +7583,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1640488228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7922,8 +7946,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1730329698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8174,8 +8200,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1825940577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8858,8 +8886,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1903795278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9026,8 +9056,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &1942452323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9278,8 +9310,10 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  anim: {fileID: 0}
 --- !u!61 &2009149279
 BoxCollider2D:
   m_ObjectHideFlags: 0
