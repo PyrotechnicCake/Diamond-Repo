@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2465877281681893082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.71, y: -4.8, z: 0}
+  m_LocalPosition: {x: -0.65, y: -4.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2465877281753036686}
@@ -74,7 +74,8 @@ GameObject:
   - component: {fileID: 2465877281753036674}
   - component: {fileID: 8838557019388346480}
   - component: {fileID: 6722938553475669173}
-  - component: {fileID: 5693251712056313850}
+  - component: {fileID: 8691069530091710388}
+  - component: {fileID: 2172198470974758355}
   m_Layer: 0
   m_Name: rhonda_idle_1
   m_TagString: Player
@@ -249,8 +250,34 @@ MonoBehaviour:
   fallMultiplier: 5
   lowJumpMultiplier: 10
   player: {fileID: 0}
---- !u!61 &5693251712056313850
+--- !u!61 &8691069530091710388
 BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465877281753036673}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 76566facced5c5741a97cff1e1a87358, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.81, y: 0.12558556}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 7.2}
+    newSize: {x: 5.12, y: 7.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8091145, y: 6.9488287}
+  m_EdgeRadius: 0
+--- !u!70 &2172198470974758355
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -262,19 +289,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3599999, y: 0.038491726}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 7.2}
-    newSize: {x: 5.12, y: 7.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.3612533, y: 6.7569103}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.84, y: 0}
+  m_Size: {x: 1.79, y: 6.68}
+  m_Direction: 0
 --- !u!1001 &271446261333814890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -444,6 +461,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2465877281753036686}
     m_Modifications:
+    - target: {fileID: 4893850041255739074, guid: ce6b7a6c7248f164882ff958ce0e4d3c,
+        type: 3}
+      propertyPath: m_Name
+      value: walk dust
+      objectReference: {fileID: 0}
     - target: {fileID: 4893850041255739077, guid: ce6b7a6c7248f164882ff958ce0e4d3c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -498,11 +520,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4893850041255739074, guid: ce6b7a6c7248f164882ff958ce0e4d3c,
-        type: 3}
-      propertyPath: m_Name
-      value: walk dust
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce6b7a6c7248f164882ff958ce0e4d3c, type: 3}

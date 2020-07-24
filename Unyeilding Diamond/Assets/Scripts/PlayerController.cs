@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -101,11 +102,16 @@ public class PlayerController : MonoBehaviour
             isSprinting = false;
             //Debug.Log("stop sprinting");
         }
+        if(isGrounded)
+        {
+            anim.SetBool("Falling", false);
+            anim.SetBool("Gliding", false);
+        }
     }
 
      void Update()
     {
-        if(isGrounded == false && falling > rb.position.y)
+        if(isGrounded == false && falling > rb.position.y && gameObject.transform.parent == null)
         {
             anim.SetBool("Falling", true);
         }
@@ -122,13 +128,10 @@ public class PlayerController : MonoBehaviour
             extraJumps = extrajumpsMax;
             //reset gravity
             rb.gravityScale = originalGravity;
-            anim.SetBool("Jump", false);
+
             anim.SetBool("Gliding", false);
         }
-        else
-        {
-            anim.SetBool("Jump", true);
-        }
+
         if (Input.GetButtonDown("Jump") && extraJumps > 0)
         {
             //emit jump particles
@@ -136,7 +139,7 @@ public class PlayerController : MonoBehaviour
 
             //diable glide
             rb.gravityScale = originalGravity;
-            anim.SetTrigger("Takeoff");
+            anim.SetTrigger("Jump");
             //jump
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
@@ -148,7 +151,7 @@ public class PlayerController : MonoBehaviour
 
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
-            anim.SetTrigger("Takeoff");
+            anim.SetTrigger("Jump");
         }
         //dash
         if(hasDash && dashReady && Input.GetButtonDown("Dash"))

@@ -464,6 +464,7 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!114 &82341745 stripped
@@ -2168,6 +2169,7 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1 &494721716 stripped
@@ -2220,6 +2222,7 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1001 &496838228
@@ -2603,7 +2606,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 0.125}
+  m_Offset: {x: -0.5, y: -0.1103611}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2614,7 +2617,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.25}
+  m_Size: {x: 1, y: 0.7207222}
   m_EdgeRadius: 0
 --- !u!4 &542429413 stripped
 Transform:
@@ -5302,6 +5305,7 @@ MonoBehaviour:
   checkpoint2: {fileID: 0}
   checkpoint3: {fileID: 0}
   checkpoint4: {fileID: 0}
+  gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
 --- !u!1001 &1345598155
