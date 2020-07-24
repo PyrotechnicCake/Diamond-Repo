@@ -5,10 +5,23 @@ using UnityEngine.Audio;
 
 public class VolumeControl : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+    public AudioMixer masterMixer;
+    public AudioMixer musicMixer;
+    public AudioMixer SFXMixer;
 
-    public void SetVolume(float volume)
+    public void SetMasterVolume(float volume)
     {
-        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+        masterMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+
+    }
+    public void SetMusicVolume(float volume)
+    {
+        musicMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+        
+    }
+    public void SetSFXVolume(float volume)
+    {
+        SFXMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+
     }
 }
