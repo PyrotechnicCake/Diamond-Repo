@@ -48,13 +48,14 @@ public class KillBox : MonoBehaviour
 
             anim.SetBool("Death Finish", false);
             Respawn(col.gameObject);
-            anim.SetTrigger("Death");
+            //anim.SetTrigger("Death");
 
         }
     }
 
     public void Respawn(GameObject player)
     {
+        
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         player.GetComponent<PlayerController>().enabled = false;
         if (player.transform.parent != null)
@@ -63,7 +64,8 @@ public class KillBox : MonoBehaviour
         }
         gm.GetComponent<SoundManager>().PlayerDied();
         StartCoroutine(DeathAnimation(player));
- 
+        anim.SetTrigger("Death");
+
 
 
 
