@@ -293,6 +293,9 @@ MonoBehaviour:
   checkpointNum: 0
   myLastCheckpoint: {fileID: 0}
   gm: {fileID: 0}
+  myDash: {fileID: 0}
+  myDust: {fileID: 0}
+  myJump: {fileID: 0}
 --- !u!4 &216249491
 Transform:
   m_ObjectHideFlags: 0
@@ -1047,6 +1050,7 @@ MonoBehaviour:
   ruinsAmb: {fileID: 8300000, guid: 2cc575ff7caf9cf48b4b2ea746406b9a, type: 3}
   waterfallAmb: {fileID: 8300000, guid: 23426463ae648b142894a1300abd1a46, type: 3}
   waterfallFoley: {fileID: 8300000, guid: a42bb6661b39b5b43bce8bafdc01801b, type: 3}
+  deathClip: {fileID: 8300000, guid: 81cc3cac3db4d7748a0573303d53eb4d, type: 3}
   returnToMenu: 0
 --- !u!82 &1823276185
 AudioSource:

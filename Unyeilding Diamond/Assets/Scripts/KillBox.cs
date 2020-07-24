@@ -11,8 +11,7 @@ public class KillBox : MonoBehaviour
     public GameObject checkpoint2;
     public GameObject checkpoint3;
     public GameObject checkpoint4;
-    private int checkRespawn;
-
+    public GameObject gm;
     public GameObject[] fallingPlatforms;
     public GameObject[] movingPlatforms;
     
@@ -24,6 +23,8 @@ public class KillBox : MonoBehaviour
         checkpoint2 = GameObject.FindGameObjectWithTag("Checkpoint2");
         checkpoint3 = GameObject.FindGameObjectWithTag("Checkpoint3");
         checkpoint4 = GameObject.FindGameObjectWithTag("Checkpoint4");
+        gm = GameObject.FindGameObjectWithTag("GM");
+
 
         //respawn = GameObject.FindGameObjectWithTag("Respawn");
         if (fallingPlatforms.Length == 0)
@@ -41,21 +42,22 @@ public class KillBox : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            Respawn(col.gameObject, checkRespawn);
+            Respawn(col.gameObject);
            
         }
     }
 
-    public void Respawn(GameObject player, int checkpointNum)
+    public void Respawn(GameObject player)
     {
+        player.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        player.GetComponent<PlayerController>().enabled = false;
         if (player.transform.parent != null)
         {
             player.transform.parent = null;
         }
-        //add to death count
-        player.GetComponent<PlayerController>().deathCount++;
-        //find last checkpoint
-        player.transform.position = player.GetComponent<PlayerController>().myLastCheckpoint.transform.position;
+        gm.GetComponent<SoundManager>().PlayerDied();
+        StartCoroutine(DeathAnimation(player));
+        
 
        
         //reset platforms
@@ -73,5 +75,16 @@ public class KillBox : MonoBehaviour
             {"PlayedKilledBy", gameObject.name },
             {"PlayerDeathCount", player.GetComponent<PlayerController>().deathCount}
         });
+    }
+
+    IEnumerator DeathAnimation(GameObject player)
+    {
+        yield return new WaitForSeconds(8);
+        //play death Anim instead?
+        //add to death count
+        player.GetComponent<PlayerController>().deathCount++;
+        //find last checkpoint
+        player.transform.position = player.GetComponent<PlayerController>().myLastCheckpoint.transform.position;
+        player.GetComponent<PlayerController>().enabled = true;
     }
 }

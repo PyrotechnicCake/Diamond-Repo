@@ -15,6 +15,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip ruinsAmb;
     public AudioClip waterfallAmb;
     public AudioClip waterfallFoley;
+    public AudioClip deathClip;
+    private AudioClip resumeMusic;
 
     public bool returnToMenu;
     
@@ -49,6 +51,19 @@ public class SoundManager : MonoBehaviour
             musicSource.clip = titleMusic;
             musicSource.Play();
         }
+    }
+
+    public void PlayerDied()
+    {
+        resumeMusic = musicSource.clip;
+        musicSource.Stop();
+        musicSource.PlayOneShot(deathClip);
+        ResumeMusic();
+    }
+    void ResumeMusic()
+    {
+        musicSource.clip = resumeMusic;
+        musicSource.Play();
     }
 
     // Update is called once per frame
