@@ -51,6 +51,7 @@ public class KillBox : MonoBehaviour
             if(PC.Death == 0)
             {
                 PC.Death += 1;
+                anim.SetBool("Gliding", false);
                 anim.SetBool("Death Finish", false);
                 Respawn(col.gameObject);
             }
