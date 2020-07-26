@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 5;
     private bool isSprinting = false;
     public float falling;
+    public int Death = 0;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
@@ -162,23 +163,23 @@ public class PlayerController : MonoBehaviour
         //glide
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
-            anim.SetBool("Gliding", true);
-            //stop all vertical movement
-            rb.velocity = new Vector2(moveInput * speed, 0);
-            //reduce gravity when falling
-            //rb.gravityScale /= glidePower;
-            rb.gravityScale = 0.25f;
-            isGliding = true;
+                anim.SetBool("Gliding", true);
+                //stop all vertical movement
+                rb.velocity = new Vector2(moveInput * speed, 0);
+                //reduce gravity when falling
+                //rb.gravityScale /= glidePower;
+                rb.gravityScale = 0.25f;
+                isGliding = true;           
         }
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
-            anim.SetBool("Gliding", true);
-            //stop all vertical movement
-            rb.velocity = new Vector2(moveInput * speed, 0);
-            //reduce gravity
-            //rb.gravityScale /= glidePower;
-            rb.gravityScale = 0.25f;
-            isGliding = true;
+                anim.SetBool("Gliding", true);
+                //stop all vertical movement
+                rb.velocity = new Vector2(moveInput * speed, 0);
+                //reduce gravity
+                //rb.gravityScale /= glidePower;
+                rb.gravityScale = 0.25f;
+                isGliding = true;        
         }
         if (hasGlide && Input.GetButtonUp("Glide"))
         {

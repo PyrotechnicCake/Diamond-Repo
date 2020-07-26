@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using UnityEngine;
 using UnityEngine.Analytics;
 
@@ -14,12 +15,14 @@ public class KillBox : MonoBehaviour
     public GameObject gm;
     public GameObject[] fallingPlatforms;
     public GameObject[] movingPlatforms;
+    public PlayerController PC;
 
     public Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
+        PC = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         startPos = GameObject.FindGameObjectWithTag("StartPos");
         checkpoint1 = GameObject.FindGameObjectWithTag("Checkpoint1");
@@ -45,9 +48,14 @@ public class KillBox : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-
-            anim.SetBool("Death Finish", false);
-            Respawn(col.gameObject);
+            if(PC.Death == 0)
+            {
+                PC.Death += 1;
+                anim.SetBool("Gliding", false);
+                anim.SetBool("Death Finish", false);
+                Respawn(col.gameObject);
+            }
+            
         }
     }
 
@@ -62,6 +70,7 @@ public class KillBox : MonoBehaviour
         }
         gm.GetComponent<SoundManager>().PlayerDied();
         StartCoroutine(DeathAnimation(player));
+
 
 
 
@@ -96,6 +105,6 @@ public class KillBox : MonoBehaviour
         player.transform.position = player.GetComponent<PlayerController>().myLastCheckpoint.transform.position;
         player.GetComponent<PlayerController>().enabled = true;
         anim.SetBool("Death Finish", true);
-      
+        PC.Death = 0;
     }
 }
