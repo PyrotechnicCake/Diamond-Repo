@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         myDash.Stop();
+        myDash.Clear();
 
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
