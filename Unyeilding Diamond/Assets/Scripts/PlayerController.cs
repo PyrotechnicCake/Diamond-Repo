@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 5;
     private bool isSprinting = false;
     public float falling;
+    public int Death = 0;
 
     private Rigidbody2D rb;
     private bool facingRight = true;
