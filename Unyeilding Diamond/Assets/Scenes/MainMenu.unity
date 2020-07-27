@@ -506,6 +506,7 @@ MonoBehaviour:
   sprintSpeed: 2
   walkSpeed: 5
   falling: 0
+  Death: 0
   hasJump: 0
   isGrounded: 0
   groundCheck: {fileID: 216461202}
@@ -670,12 +671,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 248883913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd5d00694780998459c3d7dfd0286de9, type: 3}
+  m_Script: {fileID: 11500000, guid: 629e9e5276f25ba41a17b7b338bfd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Tutorial
-  levelChanger: {fileID: 0}
-  time: 1
+  player: {fileID: 0}
+  indie: {fileID: 0}
+  currentScene:
+    m_Handle: 0
+  gm: {fileID: 0}
+  sm: {fileID: 0}
+  levelNum: 0
+  saveAndQuit: 0
+  saveAndMenu: 0
 --- !u!114 &248883916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,7 +727,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 248883915}
-        m_MethodName: LoadNext
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

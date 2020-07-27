@@ -63,6 +63,17 @@ public class SaveLoadButton : MonoBehaviour
         //player.gameObject.transform.position = player.myLastCheckpoint.transform.position;
     }
 
+    public void NewGame()
+    {
+        gm.hasJump = false;
+        gm.hasDash = false;
+        gm.hasGlide = false;
+        gm.extraJumps = 0;
+        gm.lastCheckpoint = null;
+
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void ResetGame()
     {
         SaveSystem.ErasePlayer();

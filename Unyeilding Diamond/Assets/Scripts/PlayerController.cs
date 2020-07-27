@@ -66,6 +66,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        gm.pc = this;
+        gm.player = gameObject;
         hasJump = gm.hasJump;
         hasDash = gm.hasDash;
         hasGlide = gm.hasGlide;

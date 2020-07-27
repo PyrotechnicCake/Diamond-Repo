@@ -44,6 +44,7 @@ public class SoundManager : MonoBehaviour
             musicSource.Stop();
             musicSource.clip = titleMusic;
             musicSource.Play();
+            returnToMenu = false;
         }
         if(scene.buildIndex == 11)
         {
