@@ -378,6 +378,7 @@ MonoBehaviour:
   levelNum: 0
   saveAndQuit: 0
   saveAndMenu: 0
+  levelChanger: {fileID: 0}
 --- !u!114 &210691750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +684,7 @@ MonoBehaviour:
   levelNum: 0
   saveAndQuit: 0
   saveAndMenu: 0
+  levelChanger: {fileID: 0}
 --- !u!114 &248883916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1538,7 +1540,7 @@ GameObject:
   - component: {fileID: 813930925}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,6 +1801,7 @@ MonoBehaviour:
   levelNum: 0
   saveAndQuit: 0
   saveAndMenu: 0
+  levelChanger: {fileID: 0}
 --- !u!114 &950845382
 MonoBehaviour:
   m_ObjectHideFlags: 0

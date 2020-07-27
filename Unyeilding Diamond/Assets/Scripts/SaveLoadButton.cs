@@ -13,6 +13,8 @@ public class SaveLoadButton : MonoBehaviour
     public int levelNum;
     public bool saveAndQuit = false;
     public bool saveAndMenu = false;
+    public Animator levelChanger;
+    public int time = 1;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class SaveLoadButton : MonoBehaviour
         currentScene = SceneManager.GetActiveScene();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         sm = GameObject.FindGameObjectWithTag("GM").GetComponent<SoundManager>();
+        levelChanger = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<Animator>();
     }
 
     public void SaveGame()
@@ -39,7 +42,39 @@ public class SaveLoadButton : MonoBehaviour
 
     public void LoadGame()
     {
+
+        levelChanger.SetTrigger("FadeOut");
+        StartCoroutine(ChangeTimeLoad());
         
+    }
+
+    public void NewGame()
+    {
+        levelChanger.SetTrigger("FadeOut");
+        StartCoroutine(ChangeTime());
+        
+    }
+
+    public void ResetGame()
+    {
+        SaveSystem.ErasePlayer();
+        Debug.Log("Player data erased");
+    }
+
+    IEnumerator ChangeTime()
+    {
+        yield return new WaitForSeconds(time);
+        gm.hasJump = false;
+        gm.hasDash = false;
+        gm.hasGlide = false;
+        gm.extraJumps = 0;
+        gm.lastCheckpoint = null;
+
+        SceneManager.LoadScene("Tutorial");
+    }
+    IEnumerator ChangeTimeLoad()
+    {
+        yield return new WaitForSeconds(time);
         levelNum = PlayerPrefs.GetInt("levelNum");
         //SceneManager.LoadScene(levelNum);
         //Instantiate(indie);
@@ -61,22 +96,5 @@ public class SaveLoadButton : MonoBehaviour
         gm.playerposition = position;
         SceneManager.LoadScene(levelNum);
         //player.gameObject.transform.position = player.myLastCheckpoint.transform.position;
-    }
-
-    public void NewGame()
-    {
-        gm.hasJump = false;
-        gm.hasDash = false;
-        gm.hasGlide = false;
-        gm.extraJumps = 0;
-        gm.lastCheckpoint = null;
-
-        SceneManager.LoadScene("Tutorial");
-    }
-
-    public void ResetGame()
-    {
-        SaveSystem.ErasePlayer();
-        Debug.Log("Player data erased");
     }
 }
