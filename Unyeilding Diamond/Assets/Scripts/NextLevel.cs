@@ -9,6 +9,7 @@ public class NextLevel : MonoBehaviour
     public string nextLevel;
     private Scene thisLevel;
     private float elapsedTime;
+    public GameManager gm;
 
     public Animator levelChanger;
     public int time = 1;
@@ -17,6 +18,7 @@ public class NextLevel : MonoBehaviour
     void Start()
     {
         levelChanger = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Animator>();
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class NextLevel : MonoBehaviour
         {
             //reset respawn number
             collision.GetComponent<PlayerController>().checkpointNum = 0;
+            gm.lastCheckpoint = "StartPos";
             //Analytics
             Analytics.CustomEvent("LevelFinished", new Dictionary<string, object>
         {
