@@ -52,6 +52,7 @@ public class SaveLoadButton : MonoBehaviour
     {
         levelChanger.SetTrigger("FadeOut");
         StartCoroutine(ChangeTime());
+        gm.lastCheckpoint = "StartPos";
         
     }
 
