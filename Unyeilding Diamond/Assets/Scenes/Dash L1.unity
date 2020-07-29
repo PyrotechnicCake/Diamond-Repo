@@ -3427,6 +3427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 22779736}
   priorityNum: 2
+  cam2: {fileID: 0}
+  priorityNum2: 0
+  cam3: {fileID: 0}
+  priorityNum3: 0
 --- !u!61 &530322971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6324,6 +6328,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 639864251}
+    - target: {fileID: 6405320183708350389, guid: de53907a26167454e91a893ef1318c02,
+        type: 3}
+      propertyPath: m_Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6405320183708350388, guid: de53907a26167454e91a893ef1318c02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6836,7 +6845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010363982}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: -106.89, y: 36.271282, z: -64.9223}
+  m_LocalPosition: {x: -106.89, y: 6.828365, z: -24.419682}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7616,6 +7625,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 639864251}
+    - target: {fileID: 8276982556469045803, guid: 13c74e271f3a0f344b6c1352f431e7ce,
+        type: 3}
+      propertyPath: m_Priority
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8276982556469045796, guid: 13c74e271f3a0f344b6c1352f431e7ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11224,6 +11238,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 744774738}
   priorityNum: 2
+  cam2: {fileID: 0}
+  priorityNum2: 0
+  cam3: {fileID: 0}
+  priorityNum3: 0
 --- !u!61 &1671266537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14278,7 +14296,6 @@ GameObject:
   - component: {fileID: 2138183409}
   - component: {fileID: 2138183408}
   - component: {fileID: 2138183407}
-  - component: {fileID: 2138183410}
   m_Layer: 0
   m_Name: Switch Back
   m_TagString: Untagged
@@ -14300,6 +14317,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 22779736}
   priorityNum: 0
+  cam2: {fileID: 744774738}
+  priorityNum2: 1
+  cam3: {fileID: 1582609812}
+  priorityNum3: 2
 --- !u!61 &2138183408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14340,20 +14361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2138183410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138183406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86cc527a71c9c014fa69584acaa61cf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 744774738}
-  priorityNum: 0
 --- !u!1001 &2142429758
 PrefabInstance:
   m_ObjectHideFlags: 0
