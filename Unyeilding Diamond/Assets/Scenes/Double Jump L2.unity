@@ -5116,7 +5116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410979831}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: -124.6, y: 12.148076, z: -61.10724}
+  m_LocalPosition: {x: -124.6, y: 4.478365, z: -26.919683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12205,6 +12205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Glide L1
+  gm: {fileID: 0}
   levelChanger: {fileID: 0}
   time: 1
 --- !u!1001 &971273144
@@ -20916,7 +20917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCheckPointNum: 3
   cam: {fileID: 2645150}
-  resetCamPriorityTo: 1
+  resetCamPriorityTo: 2
 --- !u!1001 &1840060389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24481,6 +24482,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2108340297}
+    - target: {fileID: 6405320183708350389, guid: de53907a26167454e91a893ef1318c02,
+        type: 3}
+      propertyPath: m_Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6405320183708350388, guid: de53907a26167454e91a893ef1318c02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24555,6 +24561,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2108340297}
+    - target: {fileID: 8276982556469045803, guid: 13c74e271f3a0f344b6c1352f431e7ce,
+        type: 3}
+      propertyPath: m_Priority
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8276982556469045796, guid: 13c74e271f3a0f344b6c1352f431e7ce,
         type: 3}
       propertyPath: m_LocalPosition.x
