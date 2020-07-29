@@ -14,12 +14,17 @@ public class TimedSmash : MonoBehaviour
     public GameObject returnPoint;
     public GameObject targetPoint;
     public GameObject respawn;
+    public AudioSource source;
+    public AudioClip crush;
+    private float lowPitch = .75f;
+    private float highPitch = 1.5f;
 
     void Start()
     {
         returnPos = returnPoint.transform.position;
         target = targetPoint.transform.position;
         StartCoroutine(StartDelay());
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -30,7 +35,8 @@ public class TimedSmash : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
             if (transform.position == target)
             {
-                
+                source.pitch = Random.Range(lowPitch, highPitch);
+                source.PlayOneShot(crush);
                 smash = false;
                 resetting = true;
             }
