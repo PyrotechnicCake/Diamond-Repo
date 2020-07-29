@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private int extraJumps;
     public int extrajumpsMax;
     public bool isJumping;
+    public float fallMultiplier = 5f;
+    public float lowJumpMultiplier = 10f;
     //dash checks
     public bool hasDash = false;
     public bool dashReady = true;
@@ -157,8 +159,17 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
         }
+
+        if (rb.velocity.y < 0 && isGliding == false)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.velocity.y > 0 && !Input.GetButton("Jump") && isGliding == false)
+        {
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
         //dash
-        if(hasDash && dashReady && Input.GetButtonDown("Dash"))
+        if (hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
             StartCoroutine("Dash");
         }
