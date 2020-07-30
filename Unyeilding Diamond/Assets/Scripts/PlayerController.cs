@@ -58,13 +58,20 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem myDash;
     public ParticleSystem myDust;
     public ParticleSystem myJump;
+
+    //sound
+    private AudioSource source;
+    public AudioClip jumpClip;
+    public AudioClip dashClip;
+    private float lowPitch = .5f;
+    private float highPitch = 1.5f;
     
     // Start is called before the first frame update
     void Start()
     {
         myDash.Stop();
         myDash.Clear();
-
+        source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
@@ -77,6 +84,7 @@ public class PlayerController : MonoBehaviour
         extrajumpsMax = gm.extraJumps;
         myLastCheckpoint = GameObject.FindGameObjectWithTag(gm.lastCheckpoint);
         gameObject.transform.position = myLastCheckpoint.transform.position;
+        
     }
 
     // Update is called once per frame
@@ -143,14 +151,17 @@ public class PlayerController : MonoBehaviour
             //emit jump particles
             myJump.Emit(6);
 
-            //diable glide
+            //disable glide
             rb.gravityScale = originalGravity;
             anim.SetTrigger("Jump");
             //jump
+            source.PlayOneShot(jumpClip);
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
             extraJumps--;
-        }else if (hasJump && Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
+            
+        }
+        else if (hasJump && Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
         {
             //emit jump particles
             myJump.Emit(6);
@@ -158,6 +169,7 @@ public class PlayerController : MonoBehaviour
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
+            source.PlayOneShot(jumpClip);
         }
 
         if (rb.velocity.y < 0 && isGliding == false)
@@ -212,12 +224,15 @@ public class PlayerController : MonoBehaviour
     {
         myDash.Play(withChildren: true);
         speed += dashSpeed;
+        source.pitch = Random.Range(lowPitch, highPitch);
+        source.PlayOneShot(dashClip);
         yield return new WaitForSeconds(dashTime);
         speed -= dashSpeed;
         dashReady = false;
         myDash.Stop();
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
+        source.pitch = 1;
     }
     void Sprint()
     {
