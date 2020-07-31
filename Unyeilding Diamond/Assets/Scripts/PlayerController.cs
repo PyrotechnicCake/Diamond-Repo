@@ -183,6 +183,9 @@ public class PlayerController : MonoBehaviour
         //dash
         if (hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
+            source.pitch = Random.Range(lowPitch, highPitch);
+            source.PlayOneShot(dashClip);
+            source.pitch = 1;
             StartCoroutine("Dash");
         }
         //glide
@@ -224,15 +227,12 @@ public class PlayerController : MonoBehaviour
     {
         myDash.Play(withChildren: true);
         speed += dashSpeed;
-        source.pitch = Random.Range(lowPitch, highPitch);
-        source.PlayOneShot(dashClip);
         yield return new WaitForSeconds(dashTime);
         speed -= dashSpeed;
         dashReady = false;
         myDash.Stop();
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
-        source.pitch = 1;
     }
     void Sprint()
     {
