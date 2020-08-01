@@ -15,6 +15,7 @@ TagManager:
   - Canvas
   - Checkpoint4
   - MusicSource
+  - ProximitySmasher
   layers:
   - Default
   - TransparentFX

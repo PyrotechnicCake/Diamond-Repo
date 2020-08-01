@@ -15,6 +15,7 @@ public class KillBox : MonoBehaviour
     public GameObject gm;
     public GameObject[] fallingPlatforms;
     public GameObject[] movingPlatforms;
+    public GameObject[] proxSmashers;
     public PlayerController PC;
 
     public Animator anim;
@@ -40,6 +41,10 @@ public class KillBox : MonoBehaviour
         if(movingPlatforms.Length == 0)
         {
             movingPlatforms = GameObject.FindGameObjectsWithTag("MovingPlatform");
+        }
+        if(proxSmashers.Length == 0)
+        {
+            proxSmashers = GameObject.FindGameObjectsWithTag("ProximitySmasher");
         }
 
     }
@@ -76,15 +81,7 @@ public class KillBox : MonoBehaviour
 
 
 
-        //reset platforms
-        foreach (GameObject fallingPlatform in fallingPlatforms)
-        {
-            fallingPlatform.GetComponent<FallingPlatform>().Return();
-        }
-        foreach (GameObject movingPlatform in movingPlatforms)
-        {
-            movingPlatform.GetComponent<MovingPlatform>().Return();
-        }
+        
         //analytics
         Analytics.CustomEvent("ThePlayierDied", new Dictionary<string, object>
         {
@@ -106,5 +103,18 @@ public class KillBox : MonoBehaviour
         player.GetComponent<PlayerController>().enabled = true;
         anim.SetBool("Death Finish", true);
         PC.Death = 0;
+        //reset platforms
+        foreach (GameObject fallingPlatform in fallingPlatforms)
+        {
+            fallingPlatform.GetComponent<FallingPlatform>().Return();
+        }
+        foreach (GameObject movingPlatform in movingPlatforms)
+        {
+            movingPlatform.GetComponent<MovingPlatform>().Return();
+        }
+        foreach (GameObject proxSmasher in proxSmashers)
+        {
+            proxSmasher.GetComponent<ProximitySmash>().Return();
+        }
     }
 }

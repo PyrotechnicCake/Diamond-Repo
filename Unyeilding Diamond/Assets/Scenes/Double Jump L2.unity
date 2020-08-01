@@ -257,6 +257,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &7721401
@@ -386,6 +387,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &9226639
@@ -4656,6 +4658,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &390914570
@@ -4785,6 +4788,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &394497622
@@ -5710,6 +5714,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &468909379
@@ -5749,6 +5754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: proximity smasher (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -6315,6 +6325,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &537063321
@@ -6866,6 +6877,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &572346254
@@ -7315,6 +7327,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &594260856
@@ -7598,6 +7611,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &618184914
@@ -9897,6 +9911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: proximity smasher (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
+      objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10096,6 +10115,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &801722714
@@ -10753,6 +10773,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &841390275
@@ -11662,6 +11683,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &899924951
@@ -12465,6 +12487,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: proximity smasher
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -13282,6 +13309,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1024320033
@@ -13668,6 +13696,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1050327269
@@ -15055,6 +15084,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1238556850
@@ -16661,6 +16691,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1395527282
@@ -17046,6 +17077,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1450648814
@@ -19140,6 +19172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: proximity smasher (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
+      objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20485,6 +20522,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1730006029
@@ -20648,6 +20686,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1738682367
@@ -22307,6 +22346,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1923883579
@@ -22956,6 +22996,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1979485186
@@ -23171,6 +23212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: proximity smasher (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -23611,6 +23657,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &2015877774
@@ -23810,6 +23857,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &2018793079
@@ -24359,6 +24407,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &2075530215
@@ -24398,6 +24447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: proximity smasher (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1798211005588298795, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
+        type: 3}
+      propertyPath: m_TagString
+      value: ProximitySmasher
       objectReference: {fileID: 0}
     - target: {fileID: 1798211005588298790, guid: d5ceb8f779ea51d41bb7ed9d5c520c46,
         type: 3}
@@ -24606,6 +24660,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &2098306655
@@ -24811,6 +24866,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &2110355057
