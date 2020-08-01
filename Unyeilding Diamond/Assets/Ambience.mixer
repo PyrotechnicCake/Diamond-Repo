@@ -6,8 +6,8 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MainMixer
-  m_OutputGroup: {fileID: 0}
+  m_Name: Ambience
+  m_OutputGroup: {fileID: 24300002, guid: e37b5e1f1602fa64abfe60ceb61aff4b, type: 2}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
@@ -16,11 +16,11 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
-  - guid: 57d2a85405af1224a84f36428a13fc7f
+  - guid: 327ed8c77d5883440a8d2582e2f6cc69
     name: volume
   m_AudioMixerGroupViews:
   - guids:
-    - ccd1d039dc7ec4e4fbe4e4839ba865ac
+    - 1051194d2db414e42a2f08dd45d3fb1c
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -32,10 +32,10 @@ AudioMixerGroupController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
-  m_GroupID: ccd1d039dc7ec4e4fbe4e4839ba865ac
+  m_GroupID: 1051194d2db414e42a2f08dd45d3fb1c
   m_Children: []
-  m_Volume: 57d2a85405af1224a84f36428a13fc7f
-  m_Pitch: 10901f6555a2b1244b63d70eca0bd01e
+  m_Volume: 327ed8c77d5883440a8d2582e2f6cc69
+  m_Pitch: ccea69b259e52cb47b18545d6af1dfc9
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
@@ -50,9 +50,9 @@ AudioMixerEffectController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_EffectID: eef47fa3a389c5b49a906e0fb1cb5c29
+  m_EffectID: 7a402aab32f12f74dafc0e05fc674b11
   m_EffectName: Attenuation
-  m_MixLevel: 8db4d82d3a4730248a2c91a8fd1f70aa
+  m_MixLevel: 4350b9f88503f654ba51131cdb05d34b
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -65,8 +65,6 @@ AudioMixerSnapshotController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
-  m_SnapshotID: e24ddb7c60e37014582527756f6e6d25
-  m_FloatValues:
-    57d2a85405af1224a84f36428a13fc7f: 0.04171297
-    74c36aa540feb2a438c49cfc6cc40a09: 0
+  m_SnapshotID: d41d520251785f547be9abf420368a93
+  m_FloatValues: {}
   m_TransitionOverrides: {}

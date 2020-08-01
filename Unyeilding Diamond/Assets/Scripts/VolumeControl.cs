@@ -8,6 +8,7 @@ public class VolumeControl : MonoBehaviour
     public AudioMixer masterMixer;
     public AudioMixer musicMixer;
     public AudioMixer SFXMixer;
+    public AudioMixer ambMixer;
 
     public void SetMasterVolume(float volume)
     {
@@ -22,6 +23,11 @@ public class VolumeControl : MonoBehaviour
     public void SetSFXVolume(float volume)
     {
         SFXMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+
+    }
+    public void SetAmbVolume(float volume)
+    {
+        ambMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
 
     }
 }
