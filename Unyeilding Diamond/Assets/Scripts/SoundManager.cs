@@ -8,15 +8,23 @@ public class SoundManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource ambienceSource;
     public AudioSource SFXSource;
-
+    //music
     public AudioClip titleMusic;
     public AudioClip inGameMusicOne;
+    //ambience
     public AudioClip jungleAmb;
-    public AudioClip ruinsAmb;
-    public AudioClip waterfallAmb;
-    public AudioClip waterfallFoley;
+    public AudioClip statuesAmb;
+    public AudioClip synthRuins;
+    public AudioClip sythnOne;
+    public AudioClip synthTwo;
+    //sfx
     public AudioClip deathClip;
     private AudioClip resumeMusic;
+    public AudioClip waterfallH;
+    public AudioClip waterfallL;
+
+    public GameObject[] waterfalls;
+
 
     public bool returnToMenu;
     
@@ -31,16 +39,46 @@ public class SoundManager : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-       if(scene.buildIndex >= 2 && scene.buildIndex != 11)
+       if(scene.buildIndex >= 2 && scene.buildIndex <= 4)
        {
+            //jump levels
             musicSource.Stop();
             musicSource.clip = inGameMusicOne;
             musicSource.Play();
             ambienceSource.clip = jungleAmb;
             ambienceSource.Play();
        }
+        if (scene.buildIndex == 5 || scene.buildIndex == 6)
+        {
+            //dash levels
+            musicSource.Stop();
+            musicSource.clip = inGameMusicOne;
+            ambienceSource.Stop();
+            ambienceSource.clip = statuesAmb;
+            ambienceSource.Play();
+        }
+        if (scene.buildIndex == 7 || scene.buildIndex == 8)
+        {
+            //double jump levels
+            musicSource.Stop();
+            musicSource.clip = inGameMusicOne;
+            
+            ambienceSource.Stop();
+            ambienceSource.clip = jungleAmb;
+            ambienceSource.Play();
+        }
+        if (scene.buildIndex == 9 || scene.buildIndex == 10)
+        {
+            //glide levels
+            musicSource.Stop();
+            musicSource.clip = inGameMusicOne;
+            ambienceSource.Stop();
+            ambienceSource.clip = synthRuins;
+            ambienceSource.Play();
+        }
         if (returnToMenu)
         {
+            ambienceSource.Stop();
             musicSource.Stop();
             musicSource.clip = titleMusic;
             musicSource.Play();

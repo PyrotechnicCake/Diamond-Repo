@@ -999,11 +999,15 @@ MonoBehaviour:
   SFXSource: {fileID: 1823276185}
   titleMusic: {fileID: 8300000, guid: f763d2eeea9bd404084823e7980aab79, type: 3}
   inGameMusicOne: {fileID: 8300000, guid: 8ef755750bc78114582e5d4ee4156ab6, type: 3}
-  jungleAmb: {fileID: 8300000, guid: 6fecb9d37b9800246856946220b7cd3e, type: 3}
-  ruinsAmb: {fileID: 8300000, guid: 2cc575ff7caf9cf48b4b2ea746406b9a, type: 3}
-  waterfallAmb: {fileID: 8300000, guid: 23426463ae648b142894a1300abd1a46, type: 3}
-  waterfallFoley: {fileID: 8300000, guid: a42bb6661b39b5b43bce8bafdc01801b, type: 3}
+  jungleAmb: {fileID: 8300000, guid: 28eff0768db87e44cae707a180c831ab, type: 3}
+  statuesAmb: {fileID: 8300000, guid: 3b5eb1dde794a644eab60d2a14f342cd, type: 3}
+  synthRuins: {fileID: 8300000, guid: 46e100796a9604d4c814f1e0fc3d5d53, type: 3}
+  sythnOne: {fileID: 8300000, guid: 8b6575031f7b29f47a2eb997c88969ff, type: 3}
+  synthTwo: {fileID: 8300000, guid: de9133b8ace57ac4593738c9fcdbba3d, type: 3}
   deathClip: {fileID: 8300000, guid: 81cc3cac3db4d7748a0573303d53eb4d, type: 3}
+  waterfallH: {fileID: 8300000, guid: e0a1683de63efd34ea6d85f72e4852b3, type: 3}
+  waterfallL: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
+  waterfalls: []
   returnToMenu: 0
 --- !u!82 &1823276185
 AudioSource:
@@ -1115,7 +1119,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
