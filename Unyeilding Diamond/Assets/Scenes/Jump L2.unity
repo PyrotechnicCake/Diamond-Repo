@@ -153,6 +153,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &7791306
@@ -214,6 +215,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &23282080
@@ -275,6 +277,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &55047813
@@ -1000,6 +1003,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &109709055
@@ -1061,6 +1065,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &111963810
@@ -1212,6 +1217,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &134239621
@@ -1485,6 +1491,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &150736149
@@ -1822,6 +1829,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &177967909
@@ -2005,6 +2013,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &183682519
@@ -2066,6 +2075,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &186716478
@@ -2981,6 +2991,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &255626011
@@ -3186,6 +3197,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &262575964
@@ -4370,6 +4382,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &332900699
@@ -4871,6 +4884,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &360431950
@@ -5534,6 +5548,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &415529105
@@ -6495,6 +6510,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &452198751
@@ -6762,6 +6778,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &471732699
@@ -7424,6 +7441,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &527611710
@@ -7524,6 +7542,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &527768911
@@ -8019,6 +8038,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &576643292
@@ -8580,6 +8600,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &639854469
@@ -8680,6 +8701,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &643155432
@@ -8801,6 +8823,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &644756424
@@ -9172,6 +9195,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &678103546
@@ -10495,6 +10519,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &873655215
@@ -10976,6 +11001,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &903880067
@@ -11260,6 +11286,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &921277147
@@ -11687,6 +11714,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &938643220
@@ -12446,6 +12474,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1017598248
@@ -13475,6 +13504,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1149889183
@@ -14089,6 +14119,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1189292384
@@ -14279,6 +14310,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1207575822
@@ -14638,6 +14670,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1218279539
@@ -15452,6 +15485,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1260557841
@@ -16035,6 +16069,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1310004006
@@ -16096,6 +16131,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1320165621
@@ -16491,6 +16527,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1332958521
@@ -16880,6 +16917,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1381022252
@@ -17846,6 +17884,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1472308956
@@ -18135,6 +18174,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1478677100
@@ -18762,6 +18802,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1546507574
@@ -19285,6 +19326,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1594361446
@@ -20744,6 +20786,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1705197148
@@ -21109,6 +21152,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1743732232
@@ -21170,6 +21214,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1751576098
@@ -21701,6 +21746,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1808594839
@@ -22635,6 +22681,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1890681514
@@ -22955,6 +23002,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1936701057
@@ -23069,7 +23117,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: cd8030a89d23cc84eb083dad7b080336,
         type: 3}
       propertyPath: m_Name
-      value: Ground
+      value: MainCollider
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cd8030a89d23cc84eb083dad7b080336,
         type: 3}
@@ -23472,6 +23520,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &1985742437
