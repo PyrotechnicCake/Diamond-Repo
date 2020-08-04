@@ -220,8 +220,6 @@ MonoBehaviour:
   myDash: {fileID: 6660733248937353052}
   myDust: {fileID: 4004471405651393037}
   myJump: {fileID: 9154321218838107189}
-  source: {fileID: 8609158073854974687}
-  walkSource: {fileID: 8460513025286662761}
   walkClip: {fileID: 8300000, guid: d5a444f182659e240b21c45399f2e164, type: 3}
   runClip: {fileID: 8300000, guid: 5b0b0e437be29274e8020d6733447978, type: 3}
   jumpClip: {fileID: 8300000, guid: 140de473bedd0924d9fb9abf9f888113, type: 3}
@@ -230,7 +228,7 @@ MonoBehaviour:
   landingClip: {fileID: 8300000, guid: 4c1958d2284274c42881375f42fa23a2, type: 3}
   dashClip: {fileID: 8300000, guid: 0e49e245681022b42899d32afeab488b, type: 3}
   walking: 0
-  running: 0
+  landed: 0
 --- !u!95 &8838557019388346480
 Animator:
   serializedVersion: 3
@@ -408,7 +406,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 30
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
