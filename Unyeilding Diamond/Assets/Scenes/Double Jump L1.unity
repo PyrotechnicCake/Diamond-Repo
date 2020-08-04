@@ -467,6 +467,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &82341745 stripped
@@ -1610,7 +1611,7 @@ AudioSource:
   m_GameObject: {fileID: 388932012}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 4d27ada3a2837484aae0fc56afbaebd4,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 54ec170f8223cfb4f8556492edbe86c8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
   m_PlayOnAwake: 1
@@ -2217,6 +2218,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1 &494721716 stripped
@@ -2272,6 +2274,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1001 &496838228
@@ -2920,7 +2923,7 @@ AudioSource:
   m_GameObject: {fileID: 577123257}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 4d27ada3a2837484aae0fc56afbaebd4,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 54ec170f8223cfb4f8556492edbe86c8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
   m_PlayOnAwake: 1
@@ -4280,7 +4283,7 @@ AudioSource:
   m_GameObject: {fileID: 957744380}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 4d27ada3a2837484aae0fc56afbaebd4,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 54ec170f8223cfb4f8556492edbe86c8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
   m_PlayOnAwake: 1
@@ -4894,7 +4897,7 @@ AudioSource:
   m_GameObject: {fileID: 1152119388}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 4d27ada3a2837484aae0fc56afbaebd4,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 54ec170f8223cfb4f8556492edbe86c8,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
   m_PlayOnAwake: 1
@@ -5568,6 +5571,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!1001 &1345598155

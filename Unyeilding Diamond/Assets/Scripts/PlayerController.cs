@@ -61,10 +61,17 @@ public class PlayerController : MonoBehaviour
 
     //sound
     private AudioSource source;
+    public AudioClip walkClip;
+    public AudioClip runClip;
     public AudioClip jumpClip;
+    public AudioClip jumpClipTwo;
+    public AudioClip glideClip;
+    public AudioClip landingClip;
     public AudioClip dashClip;
     private float lowPitch = .5f;
     private float highPitch = 1.5f;
+    public bool walking = false;
+    public bool landed = false;
     
     // Start is called before the first frame update
     void Start()
@@ -114,12 +121,17 @@ public class PlayerController : MonoBehaviour
             speed = walkSpeed;
             time = 0;
             isSprinting = false;
+            walking = false;
             //Debug.Log("stop sprinting");
         }
         if(isGrounded)
         {
             anim.SetBool("Falling", false);
             anim.SetBool("Gliding", false);
+        }
+        if (!isGrounded)
+        {
+            landed = false;
         }
     }
 
@@ -130,12 +142,35 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Falling", true);
         }
 
+        if(isGrounded && !landed)
+        {
+            source.PlayOneShot(landingClip);
+            source.Play();
+            landed = true;
+        }
+
         //walk run particle control
         if (isGrounded) {myDust.enableEmission = true;}
         else {myDust.enableEmission = false;}
 
+        if(Input.GetAxis("Horizontal") != 0 && isGrounded && !walking && !isSprinting)
+        {
+            source.clip = walkClip;
+            source.Play();
+            walking = true;
+        }else if (Input.GetAxis("Horizontal") != 0 && isGrounded && isSprinting)
+        {
+
+            //source.Stop();
+            walking = false;
+        }else if (Input.GetAxis("Horizontal") == 0 && isGrounded && !walking && !isSprinting)
+        {
+            source.Stop();
+        }
+
+
         //jump
-        if (isGrounded)
+            if (isGrounded)
         {
             anim.SetBool("Falling", false);
             //reset jumps
@@ -155,6 +190,7 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = originalGravity;
             anim.SetTrigger("Jump");
             //jump
+            source.Stop();
             source.PlayOneShot(jumpClip);
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
@@ -169,6 +205,7 @@ public class PlayerController : MonoBehaviour
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
+            source.Stop();
             source.PlayOneShot(jumpClip);
         }
 
@@ -183,6 +220,7 @@ public class PlayerController : MonoBehaviour
         //dash
         if (hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
+            source.Stop();
             source.pitch = Random.Range(lowPitch, highPitch);
             source.PlayOneShot(dashClip);
             source.pitch = 1;
@@ -192,6 +230,7 @@ public class PlayerController : MonoBehaviour
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
                 anim.SetBool("Gliding", true);
+                source.PlayOneShot(glideClip);
                 //stop all vertical movement
                 rb.velocity = new Vector2(moveInput * speed, 0);
                 //reduce gravity when falling
@@ -202,6 +241,7 @@ public class PlayerController : MonoBehaviour
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
                 anim.SetBool("Gliding", true);
+                source.PlayOneShot(glideClip);
                 //stop all vertical movement
                 rb.velocity = new Vector2(moveInput * speed, 0);
                 //reduce gravity
@@ -234,6 +274,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
     }
+
     void Sprint()
     {
         time += Time.deltaTime;
@@ -241,9 +282,11 @@ public class PlayerController : MonoBehaviour
         {
             speed += sprintSpeed;
             isSprinting = true;
+            source.Stop();
+            source.clip = runClip;
+            source.Play();
             //Debug.Log("Sprinting!");
-        }
-        
+        } 
     }
 
     void Flip()
@@ -253,6 +296,7 @@ public class PlayerController : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "MovingPlatform")

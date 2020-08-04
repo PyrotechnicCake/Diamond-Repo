@@ -128,7 +128,8 @@ MonoBehaviour:
   targetPoint: {fileID: 847842561346452289}
   respawn: {fileID: 0}
   source: {fileID: 0}
-  crush: {fileID: 8300000, guid: 84f85e9097db1da4e8fd46a5644afe27, type: 3}
+  fall: {fileID: 8300000, guid: 65f29d66768ca1d4eb9a00144a29a56e, type: 3}
+  crush: {fileID: 8300000, guid: 0dca67b0ac0e11543b17fb872cc14d13, type: 3}
 --- !u!82 &1647178287782851201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -357,6 +358,7 @@ MonoBehaviour:
   gm: {fileID: 0}
   fallingPlatforms: []
   movingPlatforms: []
+  proxSmashers: []
   PC: {fileID: 0}
   anim: {fileID: 0}
 --- !u!61 &928232021253081360

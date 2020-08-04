@@ -1004,7 +1004,7 @@ MonoBehaviour:
   synthRuins: {fileID: 8300000, guid: 46e100796a9604d4c814f1e0fc3d5d53, type: 3}
   sythnOne: {fileID: 8300000, guid: 8b6575031f7b29f47a2eb997c88969ff, type: 3}
   synthTwo: {fileID: 8300000, guid: de9133b8ace57ac4593738c9fcdbba3d, type: 3}
-  deathClip: {fileID: 8300000, guid: 81cc3cac3db4d7748a0573303d53eb4d, type: 3}
+  deathClip: {fileID: 8300000, guid: 928c9246f4258c047b65d1d720f772e6, type: 3}
   waterfallH: {fileID: 8300000, guid: e0a1683de63efd34ea6d85f72e4852b3, type: 3}
   waterfallL: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
   waterfalls: []

@@ -15,6 +15,7 @@ public class TimedSmash : MonoBehaviour
     public GameObject targetPoint;
     public GameObject respawn;
     public AudioSource source;
+    public AudioClip fall;
     public AudioClip crush;
     private float lowPitch = .75f;
     private float highPitch = 1.5f;
@@ -31,10 +32,13 @@ public class TimedSmash : MonoBehaviour
     {
         if (smash)
         {
+            source.clip = fall;
+            source.Play();
             gameObject.GetComponentInChildren<KillBox>().killBox.enabled = true;
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
             if (transform.position == target)
             {
+                source.Stop();
                 source.pitch = Random.Range(lowPitch, highPitch);
                 source.PlayOneShot(crush);
                 smash = false;

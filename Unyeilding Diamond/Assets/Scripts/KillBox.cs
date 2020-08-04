@@ -93,7 +93,7 @@ public class KillBox : MonoBehaviour
     IEnumerator DeathAnimation(GameObject player)
     {
         anim.SetTrigger("Death");
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(3);
 
         //play death Anim instead?
         //add to death count
