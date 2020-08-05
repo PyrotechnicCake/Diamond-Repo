@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour
             musicSource.clip = inGameMusicOne;
             
             ambienceSource.Stop();
-            ambienceSource.clip = jungleAmb;
+            ambienceSource.clip = waterfallL;
             ambienceSource.Play();
         }
         if (scene.buildIndex == 9 || scene.buildIndex == 10)
