@@ -9,7 +9,6 @@ public class SinkingRock : MonoBehaviour
     private Rigidbody2D rb;
     public bool returning;
     public bool sinking;
-    public GameObject colToIgnore;
 
 
 
@@ -19,7 +18,6 @@ public class SinkingRock : MonoBehaviour
         ogPos = gameObject.transform.position;
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        Physics2D.IgnoreCollision(colToIgnore.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>(),true);
     }
     private void Update()
     {

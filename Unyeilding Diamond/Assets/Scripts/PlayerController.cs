@@ -60,7 +60,8 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem myJump;
 
     //sound
-    private AudioSource source;
+    public AudioSource powerSounds;
+    public AudioSource walkingSounds;
     public AudioClip walkClip;
     public AudioClip runClip;
     public AudioClip jumpClip;
@@ -78,7 +79,6 @@ public class PlayerController : MonoBehaviour
     {
         myDash.Stop();
         myDash.Clear();
-        source = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
@@ -137,16 +137,16 @@ public class PlayerController : MonoBehaviour
 
      void Update()
     {
-        if(isGrounded == false && falling > rb.position.y && gameObject.transform.parent == null)
+        if(!isGrounded && falling > rb.position.y && gameObject.transform.parent == null)
         {
             anim.SetBool("Falling", true);
-            source.Stop();
+            walkingSounds.Stop();
         }
-
+        
         if(isGrounded && !landed)
         {
-            source.PlayOneShot(landingClip);
-            source.Play();
+            walkingSounds.PlayOneShot(landingClip);
+            walkingSounds.Play();
             landed = true;
         }
 
@@ -156,17 +156,16 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetAxis("Horizontal") != 0 && isGrounded && !walking && !isSprinting)
         {
-            source.clip = walkClip;
-            source.Play();
+            walkingSounds.clip = walkClip;
+            walkingSounds.Play();
             walking = true;
         }else if (Input.GetAxis("Horizontal") != 0 && isGrounded && isSprinting)
         {
-
             //source.Stop();
             walking = false;
         }else if (Input.GetAxis("Horizontal") == 0 && isGrounded && !walking && !isSprinting)
         {
-            source.Stop();
+            walkingSounds.Stop();
         }
 
 
@@ -191,8 +190,8 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = originalGravity;
             anim.SetTrigger("Jump");
             //jump
-            source.Stop();
-            source.PlayOneShot(jumpClip);
+            //walkingSounds.Stop();
+            powerSounds.PlayOneShot(jumpClip);
             rb.velocity = Vector2.up * jumpForce;
             //minus one jump
             extraJumps--;
@@ -206,8 +205,8 @@ public class PlayerController : MonoBehaviour
             //jump from ground without reducing extra jumps
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
-            source.Stop();
-            source.PlayOneShot(jumpClip);
+            //walkingSounds.Stop();
+            powerSounds.PlayOneShot(jumpClip);
         }
 
         if (rb.velocity.y < 0 && isGliding == false)
@@ -221,35 +220,35 @@ public class PlayerController : MonoBehaviour
         //dash
         if (hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
-            source.Stop();
-            source.pitch = Random.Range(lowPitch, highPitch);
-            source.PlayOneShot(dashClip);
-            source.pitch = 1;
-            source.Play();
+            walkingSounds.Stop();
+            powerSounds.pitch = Random.Range(lowPitch, highPitch);
+            powerSounds.PlayOneShot(dashClip);
+            powerSounds.pitch = 1;
+            walkingSounds.Play();
             StartCoroutine("Dash");
         }
         //glide
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
-                anim.SetBool("Gliding", true);
-                source.PlayOneShot(glideClip);
-                //stop all vertical movement
-                rb.velocity = new Vector2(moveInput * speed, 0);
-                //reduce gravity when falling
-                //rb.gravityScale /= glidePower;
-                rb.gravityScale = 0.25f;
-                isGliding = true;           
+            anim.SetBool("Gliding", true);
+            powerSounds.PlayOneShot(glideClip);
+            //stop all vertical movement
+            rb.velocity = new Vector2(moveInput * speed, 0);
+            //reduce gravity when falling
+            //rb.gravityScale /= glidePower;
+            rb.gravityScale = 0.25f;
+            isGliding = true;           
         }
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
-                anim.SetBool("Gliding", true);
-                source.PlayOneShot(glideClip);
-                //stop all vertical movement
-                rb.velocity = new Vector2(moveInput * speed, 0);
-                //reduce gravity
-                //rb.gravityScale /= glidePower;
-                rb.gravityScale = 0.25f;
-                isGliding = true;        
+            anim.SetBool("Gliding", true);
+            powerSounds.PlayOneShot(glideClip);
+            //stop all vertical movement
+            rb.velocity = new Vector2(moveInput * speed, 0);
+            //reduce gravity
+            //rb.gravityScale /= glidePower;
+            rb.gravityScale = 0.25f;
+            isGliding = true;        
         }
         if (hasGlide && Input.GetButtonUp("Glide"))
         {
@@ -284,9 +283,9 @@ public class PlayerController : MonoBehaviour
         {
             speed += sprintSpeed;
             isSprinting = true;
-            source.Stop();
-            source.clip = runClip;
-            source.Play();
+            walkingSounds.Stop();
+            walkingSounds.clip = runClip;
+            walkingSounds.Play();
             //Debug.Log("Sprinting!");
         } 
     }
