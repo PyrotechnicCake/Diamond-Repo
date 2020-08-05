@@ -42,7 +42,8 @@ public class SaveLoadButton : MonoBehaviour
 
     public void LoadGame()
     {
-
+        sm.musicSource.clip = sm.inGameMusicOne;
+        sm.musicSource.Play();
         levelChanger.SetTrigger("FadeOut");
         StartCoroutine(ChangeTimeLoad());
         
@@ -53,6 +54,8 @@ public class SaveLoadButton : MonoBehaviour
         levelChanger.SetTrigger("FadeOut");
         StartCoroutine(ChangeTime());
         gm.lastCheckpoint = "StartPos";
+        sm.musicSource.clip = sm.inGameMusicOne;
+        sm.musicSource.Play();
         
     }
 
