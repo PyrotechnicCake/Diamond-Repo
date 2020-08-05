@@ -140,6 +140,7 @@ public class PlayerController : MonoBehaviour
         if(isGrounded == false && falling > rb.position.y && gameObject.transform.parent == null)
         {
             anim.SetBool("Falling", true);
+            source.Stop();
         }
 
         if(isGrounded && !landed)
@@ -224,6 +225,7 @@ public class PlayerController : MonoBehaviour
             source.pitch = Random.Range(lowPitch, highPitch);
             source.PlayOneShot(dashClip);
             source.pitch = 1;
+            source.Play();
             StartCoroutine("Dash");
         }
         //glide
