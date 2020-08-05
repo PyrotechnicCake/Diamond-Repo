@@ -16,6 +16,7 @@ public class Treasures : MonoBehaviour
 
     public TreasureTypes myType;
     public GameManager gm;
+    public SoundManager sm;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,16 +34,13 @@ public class Treasures : MonoBehaviour
                 break;
         }
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        sm = GameObject.FindGameObjectWithTag("GM").GetComponent<SoundManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player" && myType == TreasureTypes.Jump)
+        sm.SFXSource.PlayOneShot(sm.treasureCollect);
+        if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Jump)
         {
             collision.GetComponent<PlayerController>().hasJump = true;
             gm.hasJump = true;

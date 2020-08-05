@@ -22,6 +22,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip resumeMusic;
     public AudioClip waterfallH;
     public AudioClip waterfallL;
+    public AudioClip treasureCollect;
 
     public GameObject[] waterfalls;
 

@@ -1007,6 +1007,7 @@ MonoBehaviour:
   deathClip: {fileID: 8300000, guid: 928c9246f4258c047b65d1d720f772e6, type: 3}
   waterfallH: {fileID: 8300000, guid: e0a1683de63efd34ea6d85f72e4852b3, type: 3}
   waterfallL: {fileID: 8300000, guid: 39ccfe9d55b4e204bb0323f95136438d, type: 3}
+  treasureCollect: {fileID: 8300000, guid: 0c6de5fefb9814d41a6d6c38e5f32ac1, type: 3}
   waterfalls: []
   returnToMenu: 0
 --- !u!82 &1823276185
