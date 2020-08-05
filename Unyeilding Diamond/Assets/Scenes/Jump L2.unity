@@ -9328,6 +9328,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9127817398560089401, guid: f018abac7f19ec441a5941cd625610a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f018abac7f19ec441a5941cd625610a3, type: 3}
 --- !u!1001 &189996777
@@ -23870,6 +23875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 2
   gm: {fileID: 0}
+  sm: {fileID: 0}
 --- !u!58 &486938159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87287,15 +87293,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2465877281681893083, guid: 081de32af9001a348b40f8b133e50bb0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.41
-      objectReference: {fileID: 0}
     - target: {fileID: 2465877281753036674, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: hasJump
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2465877281681893083, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081de32af9001a348b40f8b133e50bb0, type: 3}
