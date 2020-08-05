@@ -43,16 +43,16 @@ public class SoundManager : MonoBehaviour
        if(scene.buildIndex >= 2 && scene.buildIndex <= 4)
        {
             //jump levels
-            musicSource.clip = inGameMusicOne;
-            musicSource.Play();
+            //musicSource.clip = inGameMusicOne;
+            //musicSource.Play();
             ambienceSource.clip = jungleAmb;
             ambienceSource.Play();
        }
         if (scene.buildIndex == 5 || scene.buildIndex == 6)
         {
             //dash levels
-            musicSource.clip = inGameMusicOne;
-            musicSource.Play();
+            //musicSource.clip = inGameMusicOne;
+            //musicSource.Play();
             ambienceSource.Stop();
             ambienceSource.clip = statuesAmb;
             ambienceSource.Play();
@@ -60,8 +60,8 @@ public class SoundManager : MonoBehaviour
         if (scene.buildIndex == 7 || scene.buildIndex == 8)
         {
             //double jump levels
-            musicSource.clip = inGameMusicOne;
-            musicSource.Play();
+            //musicSource.clip = inGameMusicOne;
+            //musicSource.Play();
             ambienceSource.Stop();
             ambienceSource.clip = waterfallL;
             ambienceSource.Play();
@@ -69,8 +69,8 @@ public class SoundManager : MonoBehaviour
         if (scene.buildIndex == 9 || scene.buildIndex == 10)
         {
             //glide levels
-            musicSource.clip = inGameMusicOne;
-            musicSource.Play();
+            //musicSource.clip = inGameMusicOne;
+            //musicSource.Play();
             ambienceSource.Stop();
             ambienceSource.clip = synthRuins;
             ambienceSource.Play();
