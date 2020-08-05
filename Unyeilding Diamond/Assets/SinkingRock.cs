@@ -8,6 +8,7 @@ public class SinkingRock : MonoBehaviour
     public float resetSpeed;
     private Rigidbody2D rb;
     public bool returning;
+    public bool sinking;
     public GameObject colToIgnore;
 
 
@@ -30,6 +31,10 @@ public class SinkingRock : MonoBehaviour
         {
             returning = false;
         }
+        if (sinking)
+        {
+            Sink();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,13 +43,7 @@ public class SinkingRock : MonoBehaviour
         {
             //shake?
             //sink
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
-            rb.velocity = Vector2.down * .001f;
-            Debug.Log("sink");
-        }
-        if(collision.collider.isTrigger == true)
-        {
-            
+            sinking = true;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -55,6 +54,13 @@ public class SinkingRock : MonoBehaviour
             returning = true;
             
         }
+    }
+
+    public void Sink()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
+        rb.velocity = Vector2.down * .001f;
+        Debug.Log("sink");
     }
 
     public void MoveBack()
