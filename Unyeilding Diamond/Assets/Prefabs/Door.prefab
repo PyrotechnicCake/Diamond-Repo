@@ -120,6 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: Dash L1
+  gm: {fileID: 0}
+  levelChanger: {fileID: 0}
+  time: 1
 --- !u!114 &1600419491831200972
 MonoBehaviour:
   m_ObjectHideFlags: 0
