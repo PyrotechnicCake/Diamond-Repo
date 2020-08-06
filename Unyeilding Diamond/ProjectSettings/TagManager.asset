@@ -16,6 +16,8 @@ TagManager:
   - Checkpoint4
   - MusicSource
   - ProximitySmasher
+  - waterfall
+  - DashReady
   layers:
   - Default
   - TransparentFX

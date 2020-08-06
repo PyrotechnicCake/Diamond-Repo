@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Animator anim;
+    public Animator dashR;
     
     //basic movement stuff
     private float speed;
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour
         myDash.Stop();
         myDash.Clear();
         anim = GetComponent<Animator>();
+        dashR = GameObject.FindGameObjectWithTag("DashReady").GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravity = rb.gravityScale;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
@@ -273,11 +275,13 @@ public class PlayerController : MonoBehaviour
         myDash.Play(withChildren: true);
         speed += dashSpeed;
         yield return new WaitForSeconds(dashTime);
+        dashR.SetBool("DashReady", false);
         speed -= dashSpeed;
         dashReady = false;
         myDash.Stop();
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
+        dashR.SetBool("DashReady", true);
     }
 
     void Sprint()
