@@ -275,13 +275,13 @@ public class PlayerController : MonoBehaviour
         myDash.Play(withChildren: true);
         speed += dashSpeed;
         yield return new WaitForSeconds(dashTime);
-        dashR.SetBool("DashReady", false);
         speed -= dashSpeed;
         dashReady = false;
+        dashR.SetBool("DashReady", false);
         myDash.Stop();
         yield return new WaitForSeconds(dashRefreshTime);
         dashReady = true;
-        dashR.SetBool("DashReady", true);
+        dashR.SetBool("DashReady",true);
     }
 
     void Sprint()
