@@ -72,7 +72,7 @@ public class SoundManager : MonoBehaviour
             //musicSource.clip = inGameMusicOne;
             //musicSource.Play();
             ambienceSource.Stop();
-            ambienceSource.volume = .4f;
+            ambienceSource.volume = .15f;
             ambienceSource.clip = waterfallH;
             ambienceSource.Play();
         }
