@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
             ambienceSource.clip = statuesAmb;
             ambienceSource.Play();
         }
-        if (scene.buildIndex == 7 || scene.buildIndex == 8)
+        if (scene.buildIndex == 7)
         {
             //double jump levels
             //musicSource.clip = inGameMusicOne;
@@ -66,12 +66,23 @@ public class SoundManager : MonoBehaviour
             ambienceSource.clip = waterfallL;
             ambienceSource.Play();
         }
+        if (scene.buildIndex == 8)
+        {
+            //double jump levels
+            //musicSource.clip = inGameMusicOne;
+            //musicSource.Play();
+            ambienceSource.Stop();
+            ambienceSource.volume = .4f;
+            ambienceSource.clip = waterfallH;
+            ambienceSource.Play();
+        }
         if (scene.buildIndex == 9 || scene.buildIndex == 10)
         {
             //glide levels
             //musicSource.clip = inGameMusicOne;
             //musicSource.Play();
             ambienceSource.Stop();
+            ambienceSource.volume = .1f;
             ambienceSource.clip = synthRuins;
             ambienceSource.Play();
         }
