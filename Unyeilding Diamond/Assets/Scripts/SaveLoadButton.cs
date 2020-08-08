@@ -98,6 +98,26 @@ public class SaveLoadButton : MonoBehaviour
         position.y = data.position[1];
         position.z = data.position[2];
         gm.playerposition = position;
+
+        //decide music based on level num
+        if(levelNum <= 6)
+        {
+            sm.musicSource.clip = sm.inGameMusicOne;
+            sm.musicSource.Play();
+            Debug.Log("playing ingame track 1");
+        }else if(levelNum > 6 && levelNum <= 9)
+        {
+            sm.musicSource.clip = sm.inGameMusicTwo;
+            sm.musicSource.Play();
+            Debug.Log("playing ingame track 2");
+        }
+        else if(levelNum == 10)
+        {
+            sm.musicSource.clip = sm.themeMusic;
+            sm.musicSource.Play();
+            Debug.Log("playing theme music");
+        }
+
         SceneManager.LoadScene(levelNum);
         //player.gameObject.transform.position = player.myLastCheckpoint.transform.position;
     }

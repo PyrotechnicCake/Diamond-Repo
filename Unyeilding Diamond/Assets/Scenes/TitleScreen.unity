@@ -1003,8 +1003,9 @@ MonoBehaviour:
   musicSource: {fileID: 1823276183}
   ambienceSource: {fileID: 1823276186}
   SFXSource: {fileID: 1823276185}
-  titleMusic: {fileID: 8300000, guid: f763d2eeea9bd404084823e7980aab79, type: 3}
-  inGameMusicOne: {fileID: 8300000, guid: 8ef755750bc78114582e5d4ee4156ab6, type: 3}
+  themeMusic: {fileID: 8300000, guid: 394e469cbb8f3ba41a67715b37cdd1fa, type: 3}
+  inGameMusicOne: {fileID: 8300000, guid: 20f791e00798e5f43add10c77a997e70, type: 3}
+  inGameMusicTwo: {fileID: 8300000, guid: e7e14d80923d2d94f8da17c1f8efa1c5, type: 3}
   jungleAmb: {fileID: 8300000, guid: 28eff0768db87e44cae707a180c831ab, type: 3}
   statuesAmb: {fileID: 8300000, guid: 3b5eb1dde794a644eab60d2a14f342cd, type: 3}
   synthRuins: {fileID: 8300000, guid: 46e100796a9604d4c814f1e0fc3d5d53, type: 3}

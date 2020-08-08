@@ -9,8 +9,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource ambienceSource;
     public AudioSource SFXSource;
     //music
-    public AudioClip titleMusic;
+    public AudioClip themeMusic;
     public AudioClip inGameMusicOne;
+    public AudioClip inGameMusicTwo;
     //ambience
     public AudioClip jungleAmb;
     public AudioClip statuesAmb;
@@ -34,7 +35,7 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoad;
-        musicSource.clip = titleMusic;
+        musicSource.clip = themeMusic;
         musicSource.Play();
     }
 
@@ -90,14 +91,14 @@ public class SoundManager : MonoBehaviour
         {
             ambienceSource.Stop();
             musicSource.Stop();
-            musicSource.clip = titleMusic;
+            musicSource.clip = themeMusic;
             musicSource.Play();
             returnToMenu = false;
         }
         if(scene.buildIndex == 11)
         {
             musicSource.Stop();
-            musicSource.clip = titleMusic;
+            musicSource.clip = themeMusic;
             musicSource.Play();
         }
     }

@@ -10,6 +10,7 @@ public class NextLevel : MonoBehaviour
     private Scene thisLevel;
     private float elapsedTime;
     public GameManager gm;
+    private SoundManager sm;
 
     public Animator levelChanger;
     public int time = 1;
@@ -19,6 +20,7 @@ public class NextLevel : MonoBehaviour
     {
         levelChanger = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Animator>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
+        sm = GameObject.FindGameObjectWithTag("GM").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -54,6 +56,18 @@ public class NextLevel : MonoBehaviour
     IEnumerator ChangeTime()
     {
         yield return new WaitForSeconds(time);
+        if(nextLevel == "Dash L2")
+        {
+            sm.musicSource.clip = sm.inGameMusicTwo;
+            sm.musicSource.Play();
+            Debug.Log("playing ingame track 2");
+        }
+        if(nextLevel == "Glide L2")
+        {
+            sm.musicSource.clip = sm.themeMusic;
+            sm.musicSource.Play();
+            Debug.Log("playing theme music");
+        }
         SceneManager.LoadScene(nextLevel);
     }
 }
