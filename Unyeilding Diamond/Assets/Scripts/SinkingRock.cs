@@ -50,7 +50,7 @@ public class SinkingRock : MonoBehaviour
         {
             //return
             returning = true;
-            
+            sinking = false;
         }
     }
 
