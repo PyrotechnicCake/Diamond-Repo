@@ -72,11 +72,10 @@ GameObject:
   - component: {fileID: 2465877281753036685}
   - component: {fileID: 2465877281753036684}
   - component: {fileID: 2465877281753036674}
-  - component: {fileID: 8838557019388346480}
-  - component: {fileID: 8691069530091710388}
   - component: {fileID: 2172198470974758355}
   - component: {fileID: 8609158073854974687}
   - component: {fileID: 8460513025286662761}
+  - component: {fileID: 8838557019388346480}
   m_Layer: 0
   m_Name: rhonda_idle_1
   m_TagString: Player
@@ -233,51 +232,6 @@ MonoBehaviour:
   dashClip: {fileID: 8300000, guid: 0e49e245681022b42899d32afeab488b, type: 3}
   walking: 0
   landed: 0
---- !u!95 &8838557019388346480
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2465877281753036673}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b83425912ba8eb44da7bed7dd6cd65ae, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &8691069530091710388
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2465877281753036673}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 76566facced5c5741a97cff1e1a87358, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.81, y: 0.12558556}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.12, y: 7.2}
-    newSize: {x: 5.12, y: 7.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.8091145, y: 6.9488287}
-  m_EdgeRadius: 0
 --- !u!70 &2172198470974758355
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -488,6 +442,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &8838557019388346480
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465877281753036673}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b83425912ba8eb44da7bed7dd6cd65ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4256404082727442661
 GameObject:
   m_ObjectHideFlags: 0
