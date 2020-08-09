@@ -12,7 +12,14 @@ public class FallingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myCollider = gameObject.GetComponent<BoxCollider2D>();
+       
+        if(gameObject.GetComponent<BoxCollider2D>() == null)
+        {
+            myCollider = gameObject.GetComponentInChildren<BoxCollider2D>();
+        }else
+        {
+            myCollider = gameObject.GetComponent<BoxCollider2D>();
+        }
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().gravityScale;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
