@@ -67,6 +67,7 @@ public class KillBox : MonoBehaviour
     public void Respawn(GameObject player)
     {
         player.GetComponent<PlayerController>().walkingSounds.Stop();
+        player.GetComponent<Rigidbody2D>().gravityScale = player.GetComponent<PlayerController>().originalGravity;
         player.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         player.GetComponent<PlayerController>().enabled = false;
         if (player.transform.parent != null)

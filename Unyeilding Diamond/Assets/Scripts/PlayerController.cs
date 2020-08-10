@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     //glide checks
     public bool hasGlide = false;
     public float glidePower;
-    private float originalGravity;
+    public float originalGravity;
     //fly checks
     public bool isGliding = false;
     public bool hasFly = false;
