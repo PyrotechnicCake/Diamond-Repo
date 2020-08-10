@@ -238,27 +238,29 @@ public class PlayerController : MonoBehaviour
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
             anim.SetBool("Gliding", true);
-            powerSounds.volume = .4f;
+            powerSounds.volume = .3f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(glideClip);
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity when falling
             //rb.gravityScale /= glidePower;
-            rb.gravityScale = 0.25f;
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2(moveInput * speed, -.5f);
             isGliding = true;           
         }
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
             anim.SetBool("Gliding", true);
-            powerSounds.volume = .4f;
+            powerSounds.volume = .3f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(glideClip);
             //stop all vertical movement
             rb.velocity = new Vector2(moveInput * speed, 0);
             //reduce gravity
             //rb.gravityScale /= glidePower;
-            rb.gravityScale = 0.25f;
+            rb.gravityScale = 0f;
+            rb.velocity = new Vector2(moveInput * speed, -.5f);
             isGliding = true;        
         }
         if (hasGlide && Input.GetButtonUp("Glide"))
