@@ -64,7 +64,7 @@ public class SoundManager : MonoBehaviour
             //musicSource.clip = inGameMusicOne;
             //musicSource.Play();
             ambienceSource.Stop();
-            ambienceSource.clip = waterfallL;
+            ambienceSource.clip = waterfallH;
             ambienceSource.Play();
         }
         if (scene.buildIndex == 8)
@@ -74,7 +74,7 @@ public class SoundManager : MonoBehaviour
             //musicSource.Play();
             ambienceSource.Stop();
             ambienceSource.volume = .15f;
-            ambienceSource.clip = waterfallH;
+            ambienceSource.clip = waterfallL;
             ambienceSource.Play();
         }
         if (scene.buildIndex == 9 || scene.buildIndex == 10)
