@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
 
         //jump
-            if (isGrounded)
+        if (isGrounded)
         {
             anim.SetBool("Falling", false);
             //reset jumps
@@ -193,6 +193,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Jump");
             //jump
             //walkingSounds.Stop();
+            powerSounds.volume = .66f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(jumpClip);
             rb.velocity = Vector2.up * jumpForce;
@@ -209,6 +210,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             anim.SetTrigger("Jump");
             //walkingSounds.Stop();
+            powerSounds.volume = .66f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(jumpClip);
         }
@@ -225,6 +227,7 @@ public class PlayerController : MonoBehaviour
         if (hasDash && dashReady && Input.GetButtonDown("Dash"))
         {
             walkingSounds.Stop();
+            powerSounds.volume = .66f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(dashClip);
             //powerSounds.pitch = 1;
@@ -235,6 +238,7 @@ public class PlayerController : MonoBehaviour
         if (hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y <= 0 && !isGrounded)
         {
             anim.SetBool("Gliding", true);
+            powerSounds.volume = .4f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(glideClip);
             //stop all vertical movement
@@ -247,6 +251,7 @@ public class PlayerController : MonoBehaviour
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
         {
             anim.SetBool("Gliding", true);
+            powerSounds.volume = .4f;
             powerSounds.pitch = Random.Range(lowPitch, highPitch);
             powerSounds.PlayOneShot(glideClip);
             //stop all vertical movement
