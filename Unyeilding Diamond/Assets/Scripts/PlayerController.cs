@@ -246,7 +246,7 @@ public class PlayerController : MonoBehaviour
             //reduce gravity when falling
             //rb.gravityScale /= glidePower;
             rb.gravityScale = 0;
-            rb.velocity = new Vector2(moveInput * speed, -.5f);
+            rb.velocity = new Vector2(moveInput * speed, -4.5f);
             isGliding = true;           
         }
         else if(hasGlide && Input.GetButtonDown("Glide") && rb.velocity.y > 0)
@@ -260,7 +260,7 @@ public class PlayerController : MonoBehaviour
             //reduce gravity
             //rb.gravityScale /= glidePower;
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(moveInput * speed, -.5f);
+            rb.velocity = new Vector2(moveInput * speed, -4.5f);
             isGliding = true;        
         }
         if (hasGlide && Input.GetButtonUp("Glide"))
