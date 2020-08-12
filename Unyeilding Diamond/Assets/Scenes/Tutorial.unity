@@ -3241,9 +3241,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78dd1fa25c0b8145aa1c396df94fe43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   myType: 0
   gm: {fileID: 0}
   sm: {fileID: 0}
+  t: 1
 --- !u!1001 &501841162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13251,9 +13253,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78dd1fa25c0b8145aa1c396df94fe43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   myType: 0
   gm: {fileID: 0}
   sm: {fileID: 0}
+  t: 0
 --- !u!58 &1933355948
 CircleCollider2D:
   m_ObjectHideFlags: 0

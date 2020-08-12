@@ -14,9 +14,13 @@ public class Treasures : MonoBehaviour
 
     }
 
+    public Animator anim;
+
     public TreasureTypes myType;
     public GameManager gm;
     public SoundManager sm;
+
+    public int t;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,7 @@ public class Treasures : MonoBehaviour
         }
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameManager>();
         sm = GameObject.FindGameObjectWithTag("GM").GetComponent<SoundManager>();
+        anim = GameObject.FindGameObjectWithTag("Chest").GetComponent<Animator>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -44,30 +49,44 @@ public class Treasures : MonoBehaviour
         {
             collision.GetComponent<PlayerController>().hasJump = true;
             gm.hasJump = true;
-            Destroy(gameObject);
+            anim.SetTrigger("Taken");
+            StartCoroutine(TreasureTaken());
+            //Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.AddJump)
         {
             collision.GetComponent<PlayerController>().extrajumpsMax++;
             gm.extraJumps ++;
-            Destroy(gameObject);
+            anim.SetTrigger("Other");
+            StartCoroutine(TreasureTaken());
+            //Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Dash)
         {
             collision.GetComponent<PlayerController>().hasDash = true;
             gm.hasDash = true;
-            Destroy(gameObject);
+            anim.SetTrigger("Taken");
+            StartCoroutine(TreasureTaken());
+            //Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Glide)
         {
             collision.GetComponent<PlayerController>().hasGlide = true;
             gm.hasGlide = true;
-            Destroy(gameObject);
+            anim.SetTrigger("Taken");
+            StartCoroutine(TreasureTaken());
+            //Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Player" && myType == TreasureTypes.Fly)
         {
             collision.GetComponent<PlayerController>().hasFly = true;
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
+    }
+
+    IEnumerator TreasureTaken()
+    {
+        yield return new WaitForSeconds(t);
+        Destroy(gameObject);
     }
 }
