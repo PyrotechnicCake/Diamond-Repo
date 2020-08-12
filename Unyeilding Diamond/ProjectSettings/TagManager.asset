@@ -18,6 +18,12 @@ TagManager:
   - ProximitySmasher
   - waterfall
   - DashReady
+  - Cam2
+  - Cam3
+  - Cam5
+  - Cam4
+  - ScreenShake
+  - Chest
   layers:
   - Default
   - TransparentFX
