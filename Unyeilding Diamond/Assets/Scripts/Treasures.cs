@@ -57,7 +57,7 @@ public class Treasures : MonoBehaviour
         {
             collision.GetComponent<PlayerController>().extrajumpsMax++;
             gm.extraJumps ++;
-            anim.SetTrigger("Other");
+            anim.SetTrigger("Taken");
             StartCoroutine(TreasureTaken());
             //Destroy(gameObject);
         }
