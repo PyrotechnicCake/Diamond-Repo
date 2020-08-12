@@ -9,6 +9,11 @@ public class SinkingRock : MonoBehaviour
     private Rigidbody2D rb;
     public bool returning;
     public bool sinking;
+    public float shakeTime;
+    private bool shakeStopped;
+    private bool sunk;
+    public Animator anim;
+
 
 
 
@@ -18,6 +23,7 @@ public class SinkingRock : MonoBehaviour
         ogPos = gameObject.transform.position;
         rb = GetComponent<Rigidbody2D>();
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -29,40 +35,56 @@ public class SinkingRock : MonoBehaviour
         {
             returning = false;
         }
-        if (sinking)
+        if (sinking && shakeStopped)
         {
             Sink();
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             //shake?
+            Debug.Log("On Rock");
+            StartCoroutine(Shake());
             //sink
-            sinking = true;
+
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && sunk)
         {
             //return
+            Debug.Log("Off Rock");
             returning = true;
             sinking = false;
         }
     }
+    
+
+    IEnumerator Shake()
+    {
+        anim.SetTrigger("Sinking");
+        yield return new WaitForSeconds(shakeTime);
+        sinking = true;
+        shakeStopped = true;
+    }
 
     public void Sink()
     {
+        
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         rb.velocity = Vector2.down * .001f;
         Debug.Log("sink");
+        sunk = true;
     }
 
     public void MoveBack()
     {
+        shakeStopped = false;
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.position = Vector3.MoveTowards(gameObject.transform.position, ogPos, resetSpeed * Time.deltaTime);
         Debug.Log("Return");
