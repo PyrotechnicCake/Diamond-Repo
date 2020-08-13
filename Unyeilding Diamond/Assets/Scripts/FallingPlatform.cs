@@ -51,7 +51,6 @@ public class FallingPlatform : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.position = startPos;
         myCollider.enabled = true;
-
     }
 
 

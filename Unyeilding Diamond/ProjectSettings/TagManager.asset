@@ -24,6 +24,7 @@ TagManager:
   - Cam4
   - ScreenShake
   - Chest
+  - SinkingRock
   layers:
   - Default
   - TransparentFX

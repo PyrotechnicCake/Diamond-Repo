@@ -8,10 +8,11 @@ public class SinkingRock : MonoBehaviour
     public float resetSpeed;
     private Rigidbody2D rb;
     public bool returning;
-    public bool sinking;
+    //public bool sinking;
+    public float resurfaceTime;
     public float shakeTime;
-    private bool shakeStopped;
-    private bool sunk;
+    //private bool shakeStopped;
+    //private bool sunk;
     public Animator anim;
 
 
@@ -29,16 +30,17 @@ public class SinkingRock : MonoBehaviour
     {
         if (returning)
         {
-            MoveBack();
+            transform.position = Vector3.MoveTowards(gameObject.transform.position, ogPos, resetSpeed * Time.deltaTime);
+            Debug.Log("Return");
         }
         if(gameObject.transform.position == ogPos)
         {
             returning = false;
         }
-        if (sinking && shakeStopped)
+        /*if (sinking && shakeStopped)
         {
             Sink();
-        }
+        }*/
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -53,7 +55,7 @@ public class SinkingRock : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    /*private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && sunk)
         {
@@ -61,7 +63,18 @@ public class SinkingRock : MonoBehaviour
             Debug.Log("Off Rock");
             returning = true;
             sinking = false;
+            sunk = false;
         }
+    }*/
+
+    IEnumerator Resuface()
+    {
+        yield return new WaitForSeconds(resurfaceTime);
+        returning = true;
+        //shakeStopped = false;
+        //sunk = false;
+        //sinking = false;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
     }
     
 
@@ -69,31 +82,26 @@ public class SinkingRock : MonoBehaviour
     {
         anim.SetTrigger("Sinking");
         yield return new WaitForSeconds(shakeTime);
-        sinking = true;
-        shakeStopped = true;
+        //sinking = true;
+        //shakeStopped = true;
+        Sink();
     }
 
     public void Sink()
     {
         
         rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
-        rb.velocity = Vector2.down * .001f;
+        //rb.velocity = Vector2.down * .001f;
         Debug.Log("sink");
-        sunk = true;
+        //sunk = true;
+        StartCoroutine(Resuface());
+        
     }
 
-    public void MoveBack()
-    {
-        shakeStopped = false;
-        rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        transform.position = Vector3.MoveTowards(gameObject.transform.position, ogPos, resetSpeed * Time.deltaTime);
-        Debug.Log("Return");
-    }
     
     public void Return()
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         transform.position = ogPos;
-
     }
 }

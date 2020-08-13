@@ -120,7 +120,8 @@ MonoBehaviour:
   resetSpeed: 5
   returning: 0
   sinking: 0
-  shakeTime: 0.5
+  resurfaceTime: 2
+  shakeTime: 1
   anim: {fileID: 0}
 --- !u!61 &8106063416140069553
 BoxCollider2D:

@@ -16,6 +16,7 @@ public class KillBox : MonoBehaviour
     public GameObject[] fallingPlatforms;
     public GameObject[] movingPlatforms;
     public GameObject[] proxSmashers;
+    public GameObject[] sinkingRocks;
     public PlayerController PC;
 
     public Animator anim;
@@ -45,6 +46,10 @@ public class KillBox : MonoBehaviour
         if(proxSmashers.Length == 0)
         {
             proxSmashers = GameObject.FindGameObjectsWithTag("ProximitySmasher");
+        }
+        if (sinkingRocks.Length == 0)
+        {
+            sinkingRocks = GameObject.FindGameObjectsWithTag("SinkingRock");
         }
 
     }
@@ -116,6 +121,10 @@ public class KillBox : MonoBehaviour
         foreach (GameObject proxSmasher in proxSmashers)
         {
             proxSmasher.GetComponent<ProximitySmash>().Return();
+        }
+        foreach (GameObject sinkingRock in sinkingRocks)
+        {
+            sinkingRock.GetComponent<SinkingRock>().Return();
         }
     }
 }
