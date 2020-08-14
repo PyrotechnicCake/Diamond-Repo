@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -224,7 +225,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
         //dash
-        if (hasDash && dashReady && Input.GetButtonDown("Dash"))
+        if (hasDash && dashReady && Input.GetButtonDown("Dash") && !EventSystem.current.IsPointerOverGameObject())
         {
             walkingSounds.Stop();
             powerSounds.volume = .66f;

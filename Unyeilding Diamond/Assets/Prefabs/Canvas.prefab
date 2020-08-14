@@ -331,7 +331,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7362328017372650600}
-        m_MethodName: SetVolume
+        m_MethodName: SetMasterVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -353,10 +353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43551e55e75b55d47a7dacc89f9b406f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterMixer: {fileID: 0}
-  musicMixer: {fileID: 0}
-  SFXMixer: {fileID: 0}
-  ambMixer: {fileID: 0}
+  masterMixer: {fileID: 24100000, guid: e37b5e1f1602fa64abfe60ceb61aff4b, type: 2}
+  musicMixer: {fileID: 24100000, guid: 0a4657035fa8fec448b9f447227789d9, type: 2}
+  SFXMixer: {fileID: 24100000, guid: 4d27ada3a2837484aae0fc56afbaebd4, type: 2}
+  ambMixer: {fileID: 24100000, guid: 54ec170f8223cfb4f8556492edbe86c8, type: 2}
 --- !u!1 &4274218746873661284
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1397,10 +1397,10 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -6310949239426542665, guid: f28a62ad796da2b4e906deebdabfca9c,
     type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
