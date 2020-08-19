@@ -9,21 +9,21 @@ public class PopupText : MonoBehaviour
     
     public GameObject Pop;
    
-    SpriteRenderer P;
+    //SpriteRenderer P;
     
     // Start is called before the first frame update
     void Start()
     {
-        P = Pop.GetComponent<SpriteRenderer>();
-        P.enabled = false;
+       // P = Pop.GetComponent<SpriteRenderer>();
+      //  P.enabled = false;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            P.enabled = true;
-            
+            //P.enabled = true;
+            Pop.SetActive(true);
         }
     }
     public void OnTriggerExit2D(Collider2D collision)
