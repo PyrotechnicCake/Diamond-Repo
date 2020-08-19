@@ -49,8 +49,16 @@ public class NextLevel : MonoBehaviour
     }
     public void LoadNext()
     {
-        levelChanger.SetTrigger("FadeOut");
-        StartCoroutine(ChangeTime());
+        if(nextLevel == "EndScene")
+        {
+            levelChanger.SetTrigger("FadeOutLast");
+            StartCoroutine(ChangeTime());
+        }
+        else
+        {
+            levelChanger.SetTrigger("FadeOut");
+            StartCoroutine(ChangeTime());
+        }
     }
 
     IEnumerator ChangeTime()
