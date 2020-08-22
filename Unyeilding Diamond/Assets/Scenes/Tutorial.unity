@@ -11456,7 +11456,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8b8454566990e2e47926f90893d06650, type: 2}
+      objectReference: {fileID: 2100000, guid: 9ae07b6ffcbd2a04e9a9edb58703ade5, type: 2}
     - target: {fileID: -2968649131645477063, guid: 65e22595cfe78c645967f1bdd896524a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14505,12 +14505,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.04
+      value: -8.146
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
@@ -14560,12 +14560,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1769.0332
+      value: 1554.9802
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1572.8887
+      value: 1439.1931
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3320a1e98dcf8044d82b3a4589b98127,
         type: 3}
@@ -14576,7 +14576,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a66bb21d2f1baf54da52fb0f58fb269a, type: 2}
+      objectReference: {fileID: 2100000, guid: 9cbba5e21a1518a448e5ea3b1b2d04ff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3320a1e98dcf8044d82b3a4589b98127, type: 3}
 --- !u!1001 &1874191851
@@ -14778,6 +14778,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2465877281753036674, guid: 081de32af9001a348b40f8b133e50bb0,
+        type: 3}
+      propertyPath: myLastCheckpoint
+      value: 
+      objectReference: {fileID: 627290198}
     - target: {fileID: 2465877281753036684, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -14798,11 +14803,6 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 2465877281753036674, guid: 081de32af9001a348b40f8b133e50bb0,
-        type: 3}
-      propertyPath: myLastCheckpoint
-      value: 
-      objectReference: {fileID: 627290198}
     - target: {fileID: 5693251712056313850, guid: 081de32af9001a348b40f8b133e50bb0,
         type: 3}
       propertyPath: m_Enabled
