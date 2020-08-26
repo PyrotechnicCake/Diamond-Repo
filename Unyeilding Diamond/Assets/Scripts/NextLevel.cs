@@ -49,7 +49,7 @@ public class NextLevel : MonoBehaviour
     }
     public void LoadNext()
     {
-        if(nextLevel == "EndScene")
+        if(nextLevel == "Credits")
         {
             levelChanger.SetTrigger("FadeOutLast");
             StartCoroutine(ChangeTime());
