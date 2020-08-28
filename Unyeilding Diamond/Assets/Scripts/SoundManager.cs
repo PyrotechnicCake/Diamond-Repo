@@ -95,7 +95,7 @@ public class SoundManager : MonoBehaviour
             musicSource.Play();
             returnToMenu = false;
         }
-        if(scene.buildIndex == 11)
+        if(scene.buildIndex == 11 || scene.buildIndex == 13)
         {
             musicSource.Pause();
             ambienceSource.Stop();

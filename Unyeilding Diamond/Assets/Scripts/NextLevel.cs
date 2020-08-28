@@ -82,6 +82,10 @@ public class NextLevel : MonoBehaviour
             sm.musicSource.clip = sm.inGameMusicOne;
             sm.musicSource.Play();
         }
+        if(nextLevel == "MainMenu")
+        {
+            sm.musicSource.Play();
+        }
         SceneManager.LoadScene(nextLevel);
     }
 }
