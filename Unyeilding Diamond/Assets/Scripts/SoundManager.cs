@@ -97,8 +97,13 @@ public class SoundManager : MonoBehaviour
         }
         if(scene.buildIndex == 11)
         {
-            musicSource.Stop();
-            musicSource.clip = themeMusic;
+            musicSource.Pause();
+            ambienceSource.Stop();
+        }
+        if(scene.buildIndex == 12)
+        {
+            //musicSource.Stop();
+            //musicSource.clip = themeMusic;
             musicSource.Play();
         }
     }

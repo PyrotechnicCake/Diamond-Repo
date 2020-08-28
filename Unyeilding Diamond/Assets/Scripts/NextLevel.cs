@@ -52,6 +52,7 @@ public class NextLevel : MonoBehaviour
         if(nextLevel == "Credits")
         {
             levelChanger.SetTrigger("FadeOutLast");
+            //sm.musicSource.Pause();
             StartCoroutine(ChangeTime());
         }
         else
@@ -75,6 +76,11 @@ public class NextLevel : MonoBehaviour
             sm.musicSource.clip = sm.themeMusic;
             sm.musicSource.Play();
             Debug.Log("playing theme music");
+        }
+        if(nextLevel == "Tutorial")
+        {
+            sm.musicSource.clip = sm.inGameMusicOne;
+            sm.musicSource.Play();
         }
         SceneManager.LoadScene(nextLevel);
     }
